@@ -1,0 +1,12 @@
+{
+  "name": "Python 3.11 on Ubuntu",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    }
+  },
+  "postCreateCommand": "python3.11 -m venv .venv && source .venv/bin/activate && uv pip install -r requirements.txt"
+}
