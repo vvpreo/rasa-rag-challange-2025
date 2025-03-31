@@ -14,21 +14,21 @@ flows:
         utter: utter_clarify_reasons_for_obtaining_personal_data
         description: 'Name of the user. @RA@ Capitalize name slot if needed.'
         reset_after_flow_ends: false
-        next: user_gender
-
-      - id: user_gender
-        collect: user_gender
-        utter: utter_obtain__user_gender
-        description: 'Gender of the user. @RA@ Try to infer gender from name if it is obvious.'
-        reset_after_flow_ends: false
-        next: user_age
-
-      - id: user_age
-        collect: user_age
-        utter: utter_obtain__user_age
-        description: 'Age of the user. @RA@ If user provides year of birth - keep asking for age.'
-        reset_after_flow_ends: false
         next: user_email
+
+#      - id: user_gender
+#        collect: user_gender
+#        utter: utter_obtain__user_gender
+#        description: 'Gender of the user. @RA@ Try to infer gender from name if it is obvious.'
+#        reset_after_flow_ends: false
+#        next: user_age
+#
+#      - id: user_age
+#        collect: user_age
+#        utter: utter_obtain__user_age
+#        description: 'Age of the user. @RA@ If user provides year of birth - keep asking for age.'
+#        reset_after_flow_ends: false
+#        next: user_email
 
       - id: user_email
         collect: user_email

@@ -1,0 +1,1096 @@
+fixtures:
+- will_call_proper_flow:
+  - requests_count: 10
+test_cases:
+- test_case: John|male|25|john.doe25@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: John
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: John
+  - user: john.doe25@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: john.doe25@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Emily|female|30|emily.smith30@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Emily
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Emily
+  - user: emily.smith30@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: emily.smith30@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Michael|male|40|michael.brown40@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Michael
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Michael
+  - user: michael.brown40@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: michael.brown40@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Sophia|female|22|sophia.jones22@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Sophia
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Sophia
+  - user: sophia.jones22@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: sophia.jones22@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Daniel|male|35|daniel.miller35@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Daniel
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Daniel
+  - user: daniel.miller35@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: daniel.miller35@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Olivia|female|28|olivia.davis28@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Olivia
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Olivia
+  - user: olivia.davis28@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: olivia.davis28@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: James|male|45|james.wilson45@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: James
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: James
+  - user: james.wilson45@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: james.wilson45@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Emma|female|33|emma.moore33@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Emma
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Emma
+  - user: emma.moore33@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: emma.moore33@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: David|male|50|david.taylor50@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: David
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: David
+  - user: david.taylor50@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: david.taylor50@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Isabella|female|37|isabella.anderson37@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Isabella
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Isabella
+  - user: isabella.anderson37@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: isabella.anderson37@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Matthew|male|60|matthew.thomas60@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Matthew
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Matthew
+  - user: matthew.thomas60@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: matthew.thomas60@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Mia|female|42|mia.jackson42@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Mia
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Mia
+  - user: mia.jackson42@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: mia.jackson42@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Joseph|male|55|joseph.white55@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Joseph
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Joseph
+  - user: joseph.white55@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: joseph.white55@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Ava|female|29|ava.harris29@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Ava
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Ava
+  - user: ava.harris29@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: ava.harris29@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Christopher|male|48|christopher.martin48@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Christopher
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Christopher
+  - user: christopher.martin48@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: christopher.martin48@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Charlotte|female|31|charlotte.thompson31@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Charlotte
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Charlotte
+  - user: charlotte.thompson31@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: charlotte.thompson31@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Ethan|male|20|ethan.garcia20@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Ethan
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Ethan
+  - user: ethan.garcia20@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: ethan.garcia20@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Amelia|female|23|amelia.martinez23@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Amelia
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Amelia
+  - user: amelia.martinez23@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: amelia.martinez23@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Noah|male|32|noah.robinson32@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Noah
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Noah
+  - user: noah.robinson32@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: noah.robinson32@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Harper|female|36|harper.clark36@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Harper
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Harper
+  - user: harper.clark36@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: harper.clark36@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Alexander|male|65|alexander.lewis65@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Alexander
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Alexander
+  - user: alexander.lewis65@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: alexander.lewis65@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Evelyn|female|27|evelyn.lee27@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Evelyn
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Evelyn
+  - user: evelyn.lee27@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: evelyn.lee27@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: William|male|70|william.walker70@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: William
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: William
+  - user: william.walker70@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: william.walker70@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Abigail|female|40|abigail.hall40@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Abigail
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Abigail
+  - user: abigail.hall40@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: abigail.hall40@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Benjamin|male|80|benjamin.allen80@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Benjamin
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Benjamin
+  - user: benjamin.allen80@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: benjamin.allen80@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Ella|female|50|ella.young50@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Ella
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Ella
+  - user: ella.young50@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: ella.young50@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Samuel|male|55|samuel.king55@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Samuel
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Samuel
+  - user: samuel.king55@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: samuel.king55@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Scarlett|female|35|scarlett.wright35@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Scarlett
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Scarlett
+  - user: scarlett.wright35@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: scarlett.wright35@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Henry|male|45|henry.scott45@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Henry
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Henry
+  - user: henry.scott45@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: henry.scott45@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Avery|female|60|avery.green60@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Avery
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Avery
+  - user: avery.green60@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: avery.green60@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Liam|male|75|liam.adams75@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Liam
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Liam
+  - user: liam.adams75@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: liam.adams75@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Grace|female|85|grace.baker85@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Grace
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Grace
+  - user: grace.baker85@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: grace.baker85@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Lucas|male|90|lucas.gonzalez90@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Lucas
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Lucas
+  - user: lucas.gonzalez90@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: lucas.gonzalez90@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Zoe|female|95|zoe.nelson95@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Zoe
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Zoe
+  - user: zoe.nelson95@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: zoe.nelson95@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Mason|male|100|mason.carter100@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Mason
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Mason
+  - user: mason.carter100@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: mason.carter100@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Lily|female|105|lily.mitchell105@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Lily
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Lily
+  - user: lily.mitchell105@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: lily.mitchell105@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Logan|male|110|logan.perez110@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Logan
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Logan
+  - user: logan.perez110@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: logan.perez110@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Chloe|female|115|chloe.roberts115@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Chloe
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Chloe
+  - user: chloe.roberts115@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: chloe.roberts115@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Jacob|male|120|jacob.turner120@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Jacob
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Jacob
+  - user: jacob.turner120@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: jacob.turner120@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Aria|female|125|aria.phillips125@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Aria
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Aria
+  - user: aria.phillips125@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: aria.phillips125@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Elijah|male|130|elijah.campbell130@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Elijah
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Elijah
+  - user: elijah.campbell130@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: elijah.campbell130@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Samantha|female|15|samantha.parker15@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Samantha
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Samantha
+  - user: samantha.parker15@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: samantha.parker15@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Aiden|male|18|aiden.evans18@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Aiden
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Aiden
+  - user: aiden.evans18@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: aiden.evans18@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Addison|female|19|addison.edwards19@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Addison
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Addison
+  - user: addison.edwards19@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: addison.edwards19@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Gabriel|male|21|gabriel.collins21@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Gabriel
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Gabriel
+  - user: gabriel.collins21@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: gabriel.collins21@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Madison|female|24|madison.stewart24@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Madison
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Madison
+  - user: madison.stewart24@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: madison.stewart24@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Anthony|male|26|anthony.sanchez26@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Anthony
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Anthony
+  - user: anthony.sanchez26@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: anthony.sanchez26@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Layla|female|34|layla.morris34@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Layla
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Layla
+  - user: layla.morris34@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: layla.morris34@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Ryan|male|27|ryan.rogers27@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Ryan
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Ryan
+  - user: ryan.rogers27@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: ryan.rogers27@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Hannah|female|29|hannah.reed29@example.net
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Hannah
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Hannah
+  - user: hannah.reed29@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: hannah.reed29@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Andrew|male|31|andrew.cook31@example.org
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Andrew
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Andrew
+  - user: andrew.cook31@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: andrew.cook31@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+- test_case: Natalie|female|38|natalie.morgan38@example.com
+  fixtures:
+  - will_call_proper_flow
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Natalie
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Natalie
+  - user: natalie.morgan38@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: natalie.morgan38@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true

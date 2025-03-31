@@ -1,0 +1,28 @@
+conversations:
+- original_test_case: ./tests/e2e_finetune/specs__make_step_by_step_.yml::Enlighten me on Ducati DesertX 937 Discovery
+  steps:
+  - user: Can you provide me with details on a specific model?
+    llm_commands:
+    - start flow vehicles_search_by_make_and_model
+  - bot: I can't find any brand, named None, I know only about models 2022-2025.03
+  - utter: utter_collect_user_search_specs_make
+  - user: Ducati
+    llm_commands:
+    - set slot user_search_specs_make Ducati
+  - bot: "Not found for manufacturer 'Ducati' "
+  - bot: "Here is the list of models 2022-2025.03 according to my database for Ducati:\n- DesertX\n- DesertX 937\n- DesertX 937 Discovery\n- DesertX 937 Rally\n- DesertX Rally\n- Diavel V4\n- Diavel for Bentley\n- Hypermotard 698 Mono\n- Hypermotard 698 Mono RVE\n- Hypermotard 698 Mono RWE\n- Hypermotard 950\n- Hypermotard 950 RVE\n- Hypermotard 950 RWE\n- Hypermotard 950 SP\n- Monster\n- Monster 937 Plus\n- Monster 937 SP\n- Monster Plus\n- Monster SP\n- Monster SP 30 Anniversario\n- Monster Senna\n- Multistrada V2\n- Multistrada V2 S\n- Multistrada V4\n- Multistrada V4 Pikes Peak\n- Multistrada V4 RS\n- Multistrada V4 Rally\n- Multistrada V4 S\n- Multistrada V4S\n- Multistrada V4S Grand Tour\n- Multistrada V4S Sport\n- Panigale V2\n- Panigale V2 Bayliss\n- Panigale V2 Superquadro\n- Panigale V4\n- Panigale V4 R\n- Panigale V4 S\n- Panigale V4 SP2\n- Scrambler Full Throttle\n- Scrambler Icon\n- Scrambler Icon Dark\n- Scrambler Nightshift\n- Streetfighter V2\n- Streetfighter V4\n- Streetfighter V4 Lamborghini\n- Streetfighter V4 S\n- Streetfighter V4 SP2\n- Streetfighter V4 Supreme\n- Superleggera V4\n- Supersport 950\n- Supersport 950 S\n- V21L\n- XDiavel Dark\n- XDiavel Nera\n- XDiavel S"
+  - utter: utter_collect_user_search_specs_model
+  - user: DesertX 937 Discovery
+    llm_commands:
+    - set slot user_search_specs_model DesertX 937 Discovery
+  - bot: '✅ Models found (1):'
+  - bot: 'URL with more details: https://bikez.com/motorcycles/ducati_desertx_937_discovery_2025.php'
+  - bot: Ducati DesertX 937 Discovery
+  - bot: "Name: Ducati DesertX 937 Discovery, Year: 2025:\n- URL of the motorcycle's page: https://bikez.com/motorcycles/ducati_desertx_937_discovery_2025.php\n- URL of the motorcycle's image: https://bikez.com/pictures/ducati/2025/desertx%20937%20discovery.jpg\n- Manufacturer/brand of the motorcycle: Ducati\n- Model name of the motorcycle: DesertX 937 Discovery\n- Production year of the motorcycle: 2025\n- Category type (e.g., Sport, Cruiser, Adventure): Enduro / offroadV2, four-stroke\n- Engine displacement in cc/cubic centimeters: 937.0\n- Detailed engine specifications: Ducati Testastretta 11°, L-Twin engine\n- Type of engine (e.g., V-twin, Inline-4): V2, four-stroke\n- Maximum power output in horsepower: 110.0\n- RPM at which maximum power is achieved: 9250.0\n- Maximum torque in Newton-meters: 92.0\n- RPM at which maximum torque is achieved: 6500.0\n- Engine compression ratio: 13.3:1\n- Bore and stroke dimensions: 94.0 x 67.5 mm (3.7 x 2.7 inches)\n- Number of valves per cylinder: 4.0\n- Type of fuel system: Injection. Bosch, Ø53 mm throttle bodies with ride-by-wire system\n- Fuel control mechanism: Desmodromic valve control\n- Engine cooling system: Liquid\n- Gearbox/transmission specification: 6-speed\n- Final drive type (chain, belt, shaft): Chain (final drive)\n- Driveline configuration: Chain, front sprocket Z15, rear sprocket Z49. Primary drive: Straight cut gears, ratio 1.85.\n- Fuel consumption in liters per 100 km: 5.6\n- CO2 emissions: 129.9\n- Emission compliance and details: Euro 5\n- Exhaust system specification: Stainless steel single mufler, catalytic converter and 2 lambda probes\n- Type of frame/chassis: Tubular steel trellis\n- Trail measurement in millimeters: 122.0\n- Front suspension type and features: KYB 46 mm upside-down fork, fully adjustable\n- Front wheel travel distance: 230 mm (9.1 inches)\n- Rear suspension type and features: KYB monoshock, fully adjustable, remote preload adjustment, aluminium double-sided swingarm\n- Rear wheel travel distance: 220 mm (8.7 inches)\n- Front tire size and specification: 90/90-21\n- Rear tire size and specification: 150/70-R18\n- Front brakes type: Double disc. ABS. Floating discs. Four-piston calipers. Radially mounted.\n- Front brakes diameter: 320 mm (12.6 inches)\n- Rear brakes type: Single disc. ABS. Floating disc. Two-piston calipers.\n- Rear brakes diameter: 265 mm (10.4 inches)\n- Wheels specification: Cross spoked. Pirelli Scorpion Rally tires\n- Seat height in millimeters: 845\n- Dry weight (without fluids) in kilograms: 210.0\n- Ground clearance in millimeters: 280.0\n- Wheelbase in millimeters: 1608.0\n- Fuel tank capacity in liters: 21.0\n- Available color options: Grey/red/white\n- Starter mechanism options: Electric\n- Dashboard/instrument panel details: 5 inch TFT colour display\n- Electrical system specification: Lithium-ion battery\n- Lighting system details: LED lights\n- Cargo/load carrying capacity: Aluminium side panniers.\n- Manufacturer warranty information: 24 months unlimited miles\n- Anonymous user comments: Windscreen. 6 ride modes. Power modes. Traction control. Cruise control. Navigation. Heated grips. Keyless. USB."
+  - utter: utter_collect_user_user_search_specific_request
+  - user: What type of suspension does it have?
+    llm_commands:
+    - set slot user_search_specific_request What type of suspension does it have?
+  - utter: utter_need_time
+  - bot: STUBBED
+  - utter: utter_can_do_something_else

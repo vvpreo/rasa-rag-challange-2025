@@ -17,7 +17,7 @@ def clear_non_alphanum(text) -> str:
     return ''.join(char for char in text if char.isalnum() or char == ' ')
 
 
-FNAME_PREPEND = './tests/e2e_other/obtain_user_info__'
+FNAME_PREPEND = './tests/e2e_finetune/obtain_user_info__'
 
 # per_data_opts = get_variations_of('''
 # I need phrases, each MUST contain
@@ -99,12 +99,6 @@ def gen_tests():
         tc.steps.append(
             rts.Step(user=name,
                      assertions=[rts.Assertion(slot_was_set=[rts.SlotWasSetItem(name='user_name', value=name)])]))
-        tc.steps.append(
-            rts.Step(user=gender,
-                     assertions=[rts.Assertion(slot_was_set=[rts.SlotWasSetItem(name='user_gender', value=gender)])]))
-        tc.steps.append(
-            rts.Step(user=age,
-                     assertions=[rts.Assertion(slot_was_set=[rts.SlotWasSetItem(name='user_age', value=float(age))])]))
         tc.steps.append(
             rts.Step(user=email,
                      assertions=[rts.Assertion(slot_was_set=[rts.SlotWasSetItem(name='user_email', value=email)])]))

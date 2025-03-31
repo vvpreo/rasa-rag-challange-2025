@@ -1,0 +1,31 @@
+conversations:
+- original_test_case: ./tests/e2e_finetune/obtain_user_info__random_data.yml::Natalie|female|38|natalie.morgan38@example.com
+  steps:
+  - user: Find me best winter helmet for ATV
+    llm_commands:
+    - start flow faq
+    passing_rephrasings:
+    - Please help me locate the top winter helmet for ATV riding.
+  - utter: utter_clarify_reasons_for_obtaining_personal_data
+  - user: Natalie
+    llm_commands:
+    - set slot user_name Natalie
+    passing_rephrasings:
+    - My name is Natalie.
+  - utter: utter_obtain__user_email
+  - user: natalie.morgan38@example.com
+    llm_commands:
+    - set slot user_email natalie.morgan38@example.com
+    passing_rephrasings:
+    - You can reach me at natalie.morgan38@example.com.
+  - utter: utter_confirm_entered_data
+  - user: YES
+    llm_commands:
+    - set slot user_confirmed_personal_data True
+    passing_rephrasings:
+    - That's correct.
+  - utter: utter_thank_for_entering_data
+  - utter: utter_moto_assistant_is_back
+  - utter: utter_need_time
+  - bot: Use helmets with DOT or ECE certification. For extreme rides, choose helmets with cheek and neck protection (e.g., Shoei VFX-EVO).
+  - utter: utter_can_do_something_else

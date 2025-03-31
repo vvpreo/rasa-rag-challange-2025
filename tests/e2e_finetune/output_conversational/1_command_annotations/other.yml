@@ -1,0 +1,9 @@
+conversations:
+- original_test_case: './tests/e2e_finetune/other.yml::OTHER SEARCH: Where can I get a custom motorcycle seat made?'
+  steps:
+  - user: Where can I get a custom motorcycle seat made?
+    llm_commands:
+    - start flow other_search
+  - utter: utter_need_time
+  - bot: OTHER SEARCH STUBBED
+  - utter: utter_can_do_something_else

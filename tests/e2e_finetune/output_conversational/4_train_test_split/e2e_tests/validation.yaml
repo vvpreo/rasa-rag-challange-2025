@@ -1,0 +1,1097 @@
+fixtures:
+- will_call_proper_flow:
+  - requests_count: 10
+metadata: []
+stub_custom_actions: {}
+test_cases:
+- test_case: 'BYE: Catch you later!'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Catch you later!
+- test_case: 'BYE: I''m signing off.'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm signing off.
+- test_case: 'BYE: Catch you on the flip side!'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Catch you on the flip side!
+- test_case: 'BYE: See you in a bit.'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: See you in a bit.
+- test_case: 'BYE: I must be going.'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I must be going.
+- test_case: 'BYE: I''m saying goodbye now.'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm saying goodbye now.
+- test_case: 'BYE: It''s time to say goodbye.'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: It's time to say goodbye.
+- test_case: 'BYE: See you when I see you.'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: See you when I see you.
+- test_case: 'BYE: I''m wrapping up now.'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm wrapping up now.
+- test_case: 'BYE: Goodbye, my friend!'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Goodbye, my friend!
+- test_case: 'BYE: Until we meet again!'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Until we meet again!
+- test_case: 'BYE: See ya!'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: See ya!
+- test_case: How often should motorcycle oil be changed?
+  steps:
+  - user: How often should motorcycle oil be changed?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose a scooter for city rides?
+  steps:
+  - user: How to choose a scooter for city rides?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications improve scooter performance?
+  steps:
+  - user: What modifications improve scooter performance?
+    assertions:
+    - flow_started: faq
+- test_case: How to winterize a motorcycle?
+  steps:
+  - user: How to winterize a motorcycle?
+    assertions:
+    - flow_started: faq
+- test_case: How to increase electric scooter range?
+  steps:
+  - user: How to increase electric scooter range?
+    assertions:
+    - flow_started: faq
+- test_case: How to maintain a motorcycle air filter?
+  steps:
+  - user: How to maintain a motorcycle air filter?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose ATV load capacity?
+  steps:
+  - user: How to choose ATV load capacity?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase ATV off-road capability?
+  steps:
+  - user: What modifications increase ATV off-road capability?
+    assertions:
+    - flow_started: faq
+- test_case: How to eliminate engine noise on a scooter?
+  steps:
+  - user: How to eliminate engine noise on a scooter?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix variator malfunction on a scooter?
+  steps:
+  - user: How to fix variator malfunction on a scooter?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase scooter off-road capability?
+  steps:
+  - user: What modifications increase scooter off-road capability?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase ATV safety?
+  steps:
+  - user: What modifications increase ATV safety?
+    assertions:
+    - flow_started: faq
+- test_case: What problems occur when using mobile scooters?
+  steps:
+  - user: What problems occur when using mobile scooters?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications improve scooter handling?
+  steps:
+  - user: What modifications improve scooter handling?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix oil leakage on an ATV?
+  steps:
+  - user: How to fix oil leakage on an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase scooter safety?
+  steps:
+  - user: What modifications increase scooter safety?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose brake pads for a motorcycle?
+  steps:
+  - user: How to choose brake pads for a motorcycle?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix ABS malfunction on an ATV?
+  steps:
+  - user: How to fix ABS malfunction on an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: Sophia|female|22|sophia.jones22@example.com
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Sophia
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Sophia
+  - user: sophia.jones22@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: sophia.jones22@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+  fixtures:
+  - will_call_proper_flow
+- test_case: James|male|45|james.wilson45@example.com
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: James
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: James
+  - user: james.wilson45@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: james.wilson45@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+  fixtures:
+  - will_call_proper_flow
+- test_case: Emma|female|33|emma.moore33@example.net
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Emma
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Emma
+  - user: emma.moore33@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: emma.moore33@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+  fixtures:
+  - will_call_proper_flow
+- test_case: Matthew|male|60|matthew.thomas60@example.net
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Matthew
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Matthew
+  - user: matthew.thomas60@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: matthew.thomas60@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+  fixtures:
+  - will_call_proper_flow
+- test_case: Joseph|male|55|joseph.white55@example.com
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Joseph
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Joseph
+  - user: joseph.white55@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: joseph.white55@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+  fixtures:
+  - will_call_proper_flow
+- test_case: Christopher|male|48|christopher.martin48@example.org
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Christopher
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Christopher
+  - user: christopher.martin48@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: christopher.martin48@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+  fixtures:
+  - will_call_proper_flow
+- test_case: Charlotte|female|31|charlotte.thompson31@example.com
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Charlotte
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Charlotte
+  - user: charlotte.thompson31@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: charlotte.thompson31@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+  fixtures:
+  - will_call_proper_flow
+- test_case: Amelia|female|23|amelia.martinez23@example.org
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Amelia
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Amelia
+  - user: amelia.martinez23@example.org
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: amelia.martinez23@example.org
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+  fixtures:
+  - will_call_proper_flow
+- test_case: William|male|70|william.walker70@example.net
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: William
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: William
+  - user: william.walker70@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: william.walker70@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+  fixtures:
+  - will_call_proper_flow
+- test_case: Scarlett|female|35|scarlett.wright35@example.com
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Scarlett
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Scarlett
+  - user: scarlett.wright35@example.com
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: scarlett.wright35@example.com
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+  fixtures:
+  - will_call_proper_flow
+- test_case: Hannah|female|29|hannah.reed29@example.net
+  steps:
+  - user: Find me best winter helmet for ATV
+    assertions: []
+  - user: Hannah
+    assertions:
+    - slot_was_set:
+      - name: user_name
+        value: Hannah
+  - user: hannah.reed29@example.net
+    assertions:
+    - slot_was_set:
+      - name: user_email
+        value: hannah.reed29@example.net
+  - user: 'YES'
+    assertions:
+    - slot_was_set:
+      - name: user_confirmed_personal_data
+        value: true
+  fixtures:
+  - will_call_proper_flow
+- test_case: 'OTHER SEARCH: Where can I find the best motorcycle lifts?'
+  steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I find the best motorcycle lifts?
+- test_case: 'OTHER SEARCH: Recommend some reliable motorcycle repair shops.'
+  steps:
+  - assertions:
+    - flow_started: other_search
+    user: Recommend some reliable motorcycle repair shops.
+- test_case: 'OTHER SEARCH: Recommend some stylish motorcycle vests.'
+  steps:
+  - assertions:
+    - flow_started: other_search
+    user: Recommend some stylish motorcycle vests.
+- test_case: 'OTHER SEARCH: Suggest some top-rated motorcycle cleaning services.'
+  steps:
+  - assertions:
+    - flow_started: other_search
+    user: Suggest some top-rated motorcycle cleaning services.
+- test_case: 'OTHER SEARCH: Where can I buy bike-friendly camping gear?'
+  steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I buy bike-friendly camping gear?
+- test_case: 'OTHER SEARCH: What are the top-rated motorcycle tail bags?'
+  steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the top-rated motorcycle tail bags?
+- test_case: 'OTHER SEARCH: Where can I get motorcycle riding lessons?'
+  steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I get motorcycle riding lessons?
+- test_case: 'OTHER SEARCH: Recommend some motorcycle-friendly routes in Italy.'
+  steps:
+  - assertions:
+    - flow_started: other_search
+    user: Recommend some motorcycle-friendly routes in Italy.
+- test_case: 'OTHER SEARCH: What are the top-rated motorcycle covers for winter?'
+  steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the top-rated motorcycle covers for winter?
+- test_case: 'OTHER SEARCH: Recommend some waterproof motorcycle boots.'
+  steps:
+  - assertions:
+    - flow_started: other_search
+    user: Recommend some waterproof motorcycle boots.
+- test_case: Could you provide details about a specific vehicle model?
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I'm interested in details about a specific model.
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I'm looking for details on a specific car model.
+  steps:
+  - user: I'm looking for details on a specific car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Can you help me with a certain vehicle model?
+  steps:
+  - user: Can you help me with a certain vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Could you provide information on a particular car model?
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I need details on a specific vehicle model.
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Can you provide me with details on a specific model?
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Can you assist me in finding details about a certain car model?
+  steps:
+  - user: Can you assist me in finding details about a certain car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Tell me about Kawasaki Rouser NS125 Fi
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Rouser NS125 Fi
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Rouser NS125 Fi
+  - user: Can you find the sound system details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the sound system details?
+- test_case: Clue me in about Kawasaki Concours 14
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Concours 14
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Concours 14
+  - user: Can you tell me the resale value?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the resale value?
+- test_case: Give me the rundown on Kawasaki Z900
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Z900
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Z900
+  - user: Can you find the awards received?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the awards received?
+- test_case: Spill the beans about Kawasaki KLX 110R L
+  steps:
+  - user: Can you find information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: KLX 110R L
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: KLX 110R L
+  - user: Could you find the release year?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the release year?
+- test_case: Got any details on Kawasaki Eliminator 500 SE
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Eliminator 500 SE
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Eliminator 500 SE
+  - user: Can you tell me the resale value?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the resale value?
+- test_case: ' Kawasaki Versys 1100 SE LT'
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Versys 1100 SE LT
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Versys 1100 SE LT
+  - user: Can you find the sound system details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the sound system details?
+- test_case: Any news on Honda NT1100
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: NT1100
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: NT1100
+  - user: Could you find the release year?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the release year?
+- test_case: Enlighten me on Honda SP125
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: SP125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: SP125
+  - user: What is the reliability rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the reliability rating?
+- test_case: ' Honda CBR650R'
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CBR650R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CBR650R
+  - user: Could you find out the torque?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the torque?
+- test_case: ' Honda CBR650R'
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CBR650R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CBR650R
+  - user: What is the history of this model?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the history of this model?
+- test_case: What can you tell me about Honda TRX90X
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: TRX90X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TRX90X
+  - user: What is the current market price?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the current market price?
+- test_case: Any news on Honda TRX90X
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: TRX90X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TRX90X
+  - user: Can you tell me about the lighting system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me about the lighting system?
+- test_case: Let me know about Honda Stunner
+  steps:
+  - user: Can you assist me with a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: Stunner
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Stunner
+  - user: What are the safety features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the safety features?
+- test_case: ' Yamaha TT-R110E'
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: TT-R110E
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TT-R110E
+  - user: How fast can it go?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: How fast can it go?
+- test_case: ' Yamaha TT-R110E'
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: TT-R110E
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TT-R110E
+  - user: What is the emissions rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the emissions rating?
+- test_case: What's up with Yamaha FZ-X
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: FZ-X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FZ-X
+  - user: Can you tell me the manufacturing materials?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the manufacturing materials?
+- test_case: Let me know about Suzuki V-Strom 1050 Tour
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: V-Strom 1050 Tour
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: V-Strom 1050 Tour
+  - user: I'm interested in the interior features.
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: I'm interested in the interior features.
+- test_case: Share some info about Suzuki Gixxer 250
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: Gixxer 250
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Gixxer 250
+  - user: What is the towing capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the towing capacity?
+- test_case: Share some info about Suzuki V-Strom 800
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: V-Strom 800
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: V-Strom 800
+  - user: What is the brand reputation?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the brand reputation?
+- test_case: Spill the beans about Suzuki V-Strom 800
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: V-Strom 800
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: V-Strom 800
+  - user: What is the horsepower rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the horsepower rating?
+- test_case: Share some info about Suzuki V-Strom 1050XT Tour
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: V-Strom 1050XT Tour
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: V-Strom 1050XT Tour
+  - user: Could you find the production locations?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the production locations?
+- test_case: Let me know about Triumph Trident 660 Triple Tribute Edition
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Trident 660 Triple Tribute Edition
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Trident 660 Triple Tribute Edition
+  - user: What is the reliability rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the reliability rating?
+- test_case: Enlighten me on Sym Symphony ST 50
+  steps:
+  - user: I want to know more about a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Symphony ST 50
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Symphony ST 50
+  - user: What is the fuel efficiency?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the fuel efficiency?
+- test_case: Give me the rundown on Sym Maxsym TL 508
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Maxsym TL 508
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Maxsym TL 508
+  - user: Do you have the color options?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the color options?
+- test_case: What's up with Ducati Multistrada V4S Grand Tour
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Multistrada V4S Grand Tour
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Multistrada V4S Grand Tour
+  - user: Could you find the production locations?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the production locations?
+- test_case: ' Ducati Monster Senna'
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Monster Senna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Monster Senna
+  - user: What is the towing capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the towing capacity?
+- test_case: ' Ducati Monster Senna'
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Monster Senna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Monster Senna
+  - user: Do you have the sales figures?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the sales figures?
+- test_case: ' Ducati Streetfighter V4 S'
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Streetfighter V4 S
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Streetfighter V4 S
+  - user: Do you have the dimensions?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the dimensions?
+- test_case: Spill the beans about Ducati Panigale V4 SP2
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Panigale V4 SP2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Panigale V4 SP2
+  - user: Do you know the key competitors?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the key competitors?
+- test_case: Spill the beans about Ducati Panigale V4 SP2
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Panigale V4 SP2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Panigale V4 SP2
+  - user: What is the crash test rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the crash test rating?
+- test_case: ' Ducati DesertX 937'
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: DesertX 937
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DesertX 937
+  - user: What is the crash test rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the crash test rating?

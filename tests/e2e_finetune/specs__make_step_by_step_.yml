@@ -1,0 +1,6001 @@
+test_cases:
+- test_case: Tell me about Kawasaki Rouser NS125 Fi
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Rouser NS125 Fi
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Rouser NS125 Fi
+  - user: Can you find the sound system details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the sound system details?
+- test_case: Fill me in on Kawasaki Rouser NS125 Fi
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Rouser NS125 Fi
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Rouser NS125 Fi
+  - user: What is the exterior design like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the exterior design like?
+- test_case: Enlighten me on Kawasaki Brute Force 300
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Brute Force 300
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Brute Force 300
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: Enlighten me on Kawasaki Brute Force 300
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Brute Force 300
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Brute Force 300
+  - user: Do you have the infotainment features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the infotainment features?
+- test_case: What's up with Kawasaki Concours 14
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Concours 14
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Concours 14
+  - user: Could you find the safety ratings?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the safety ratings?
+- test_case: Clue me in about Kawasaki Concours 14
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Concours 14
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Concours 14
+  - user: Can you tell me the resale value?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the resale value?
+- test_case: Spill the beans about Kawasaki Z900 SE ABS
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Z900 SE ABS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Z900 SE ABS
+  - user: Can you tell me the resale value?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the resale value?
+- test_case: Enlighten me on Kawasaki Z900 SE ABS
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Z900 SE ABS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Z900 SE ABS
+  - user: Could you check the user reviews?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you check the user reviews?
+- test_case: Clue me in about Kawasaki Z900
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Z900
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Z900
+  - user: What is the warranty coverage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the warranty coverage?
+- test_case: Give me the rundown on Kawasaki Z900
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Z900
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Z900
+  - user: Can you find the awards received?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the awards received?
+- test_case: Give me the rundown on Kawasaki Vulcan S Cafe
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Vulcan S Cafe
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Vulcan S Cafe
+  - user: What is the service interval?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the service interval?
+- test_case: ' Kawasaki Vulcan S Cafe'
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Vulcan S Cafe
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Vulcan S Cafe
+  - user: What is the towing capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the towing capacity?
+- test_case: ' Kawasaki KLX300 SM'
+  steps:
+  - user: Can you find information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: KLX300 SM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: KLX300 SM
+  - user: Can you tell me the manufacturing materials?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the manufacturing materials?
+- test_case: What's up with Kawasaki KLX300 SM
+  steps:
+  - user: Can you find information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: KLX300 SM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: KLX300 SM
+  - user: What is the current market price?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the current market price?
+- test_case: Spill the beans about Kawasaki KLX 110R L
+  steps:
+  - user: Can you find information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: KLX 110R L
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: KLX 110R L
+  - user: Could you find the release year?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the release year?
+- test_case: Enlighten me on Kawasaki KLX 110R L
+  steps:
+  - user: Can you find information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: KLX 110R L
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: KLX 110R L
+  - user: Do you have the sales figures?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the sales figures?
+- test_case: ' Kawasaki Ninja 500 SE'
+  steps:
+  - user: Can you find information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Ninja 500 SE
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Ninja 500 SE
+  - user: What are the safety features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the safety features?
+- test_case: Give me the rundown on Kawasaki Ninja 500 SE
+  steps:
+  - user: Can you find information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Ninja 500 SE
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Ninja 500 SE
+  - user: Could you find out the insurance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the insurance cost?
+- test_case: ' Kawasaki Versys-X 300 ABS'
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Versys-X 300 ABS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Versys-X 300 ABS
+  - user: Do you have the infotainment features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the infotainment features?
+- test_case: Enlighten me on Kawasaki Versys-X 300 ABS
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Versys-X 300 ABS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Versys-X 300 ABS
+  - user: What is the exterior design like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the exterior design like?
+- test_case: ' Kawasaki Ninja 400 ZX-4R'
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Ninja 400 ZX-4R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Ninja 400 ZX-4R
+  - user: Do you have the dimensions?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the dimensions?
+- test_case: Any news on Kawasaki Ninja 400 ZX-4R
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Ninja 400 ZX-4R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Ninja 400 ZX-4R
+  - user: What is the maximum load capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the maximum load capacity?
+- test_case: ' Kawasaki Eliminator 500 SE'
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Eliminator 500 SE
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Eliminator 500 SE
+  - user: Can you tell me the manufacturing materials?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the manufacturing materials?
+- test_case: Got any details on Kawasaki Eliminator 500 SE
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Eliminator 500 SE
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Eliminator 500 SE
+  - user: Can you tell me the resale value?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the resale value?
+- test_case: What's the deal with Kawasaki KLX150 SE
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: KLX150 SE
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: KLX150 SE
+  - user: Can you tell me the resale value?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the resale value?
+- test_case: What can you tell me about Kawasaki KLX150 SE
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: KLX150 SE
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: KLX150 SE
+  - user: What is the seat height?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the seat height?
+- test_case: ' Kawasaki Versys 1100 SE LT'
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Versys 1100 SE LT
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Versys 1100 SE LT
+  - user: Can you find the sound system details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the sound system details?
+- test_case: Let me know about Kawasaki Versys 1100 SE LT
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Versys 1100 SE LT
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Versys 1100 SE LT
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: Fill me in on Kawasaki Brute Force 300
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Brute Force 300
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Brute Force 300
+  - user: Could you find the safety ratings?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the safety ratings?
+- test_case: ' Kawasaki Brute Force 300'
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Brute Force 300
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Brute Force 300
+  - user: What is the history of this model?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the history of this model?
+- test_case: Enlighten me on Honda X Blade
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: X Blade
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: X Blade
+  - user: What is the navigation system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the navigation system?
+- test_case: ' Honda X Blade'
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: X Blade
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: X Blade
+  - user: What is the current market price?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the current market price?
+- test_case: Tell me about Honda CRF450R 50 Anniversary
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CRF450R 50 Anniversary
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CRF450R 50 Anniversary
+  - user: Can you find the awards received?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the awards received?
+- test_case: What's the lowdown on Honda CRF450R 50 Anniversary
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CRF450R 50 Anniversary
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CRF450R 50 Anniversary
+  - user: What is the reliability rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the reliability rating?
+- test_case: What can you tell me about Honda CB200X
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CB200X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CB200X
+  - user: What is the maximum load capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the maximum load capacity?
+- test_case: Enlighten me on Honda CB200X
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CB200X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CB200X
+  - user: Can you provide the weight details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you provide the weight details?
+- test_case: What's the lowdown on Honda CRF300L Rally
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CRF300L Rally
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CRF300L Rally
+  - user: What is the popularity ranking?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the popularity ranking?
+- test_case: Any news on Honda CRF300L Rally
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CRF300L Rally
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CRF300L Rally
+  - user: Do you have the color options?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the color options?
+- test_case: ' Honda TRX250X'
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: TRX250X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TRX250X
+  - user: What is the reliability rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the reliability rating?
+- test_case: What's the story with Honda TRX250X
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: TRX250X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TRX250X
+  - user: How fast can it go?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: How fast can it go?
+- test_case: Clue me in about Honda CBR1000RR
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CBR1000RR
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CBR1000RR
+  - user: Do you have the sales figures?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the sales figures?
+- test_case: ' Honda CBR1000RR'
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CBR1000RR
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CBR1000RR
+  - user: Do you have information on the engine specifications?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have information on the engine specifications?
+- test_case: Fill me in on Honda PCX160
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: PCX160
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: PCX160
+  - user: Can you find the awards received?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the awards received?
+- test_case: ' Honda PCX160'
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: PCX160
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: PCX160
+  - user: I'm curious about the fuel capacity.
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: I'm curious about the fuel capacity.
+- test_case: Any news on Honda NT1100
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: NT1100
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: NT1100
+  - user: Could you find the release year?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the release year?
+- test_case: Clue me in about Honda NT1100
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: NT1100
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: NT1100
+  - user: Do you know the maintenance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the maintenance cost?
+- test_case: Tell me about Honda SP125
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: SP125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: SP125
+  - user: What is the navigation system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the navigation system?
+- test_case: Enlighten me on Honda SP125
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: SP125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: SP125
+  - user: What is the reliability rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the reliability rating?
+- test_case: ' Honda CBR650R'
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CBR650R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CBR650R
+  - user: Could you find out the torque?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the torque?
+- test_case: ' Honda CBR650R'
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CBR650R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CBR650R
+  - user: What is the history of this model?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the history of this model?
+- test_case: ' Honda Fury'
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: Fury
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Fury
+  - user: What is the towing capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the towing capacity?
+- test_case: ' Honda Fury'
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: Fury
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Fury
+  - user: What is the mileage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the mileage?
+- test_case: What can you tell me about Honda TRX90X
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: TRX90X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TRX90X
+  - user: What is the current market price?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the current market price?
+- test_case: Any news on Honda TRX90X
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: TRX90X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TRX90X
+  - user: Can you tell me about the lighting system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me about the lighting system?
+- test_case: ' Honda Stunner'
+  steps:
+  - user: Can you assist me with a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: Stunner
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Stunner
+  - user: What is the emissions rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the emissions rating?
+- test_case: Let me know about Honda Stunner
+  steps:
+  - user: Can you assist me with a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: Stunner
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Stunner
+  - user: What are the safety features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the safety features?
+- test_case: What can you tell me about Honda PCX125
+  steps:
+  - user: Can you assist me with a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: PCX125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: PCX125
+  - user: What is the mileage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the mileage?
+- test_case: ' Honda PCX125'
+  steps:
+  - user: Can you assist me with a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: PCX125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: PCX125
+  - user: What is the towing capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the towing capacity?
+- test_case: ' Honda CRF 50 F'
+  steps:
+  - user: Can you assist me with a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CRF 50 F
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CRF 50 F
+  - user: What is the maximum load capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the maximum load capacity?
+- test_case: ' Honda CRF 50 F'
+  steps:
+  - user: Can you assist me with a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CRF 50 F
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CRF 50 F
+  - user: Do you know the tire size?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the tire size?
+- test_case: Spill the beans about Yamaha R6 GYTR
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: R6 GYTR
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R6 GYTR
+  - user: What is the ground clearance?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the ground clearance?
+- test_case: What's the lowdown on Yamaha R6 GYTR
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: R6 GYTR
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R6 GYTR
+  - user: What is the mileage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the mileage?
+- test_case: ' Yamaha MT-09'
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: MT-09
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: MT-09
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: ' Yamaha MT-09'
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: MT-09
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: MT-09
+  - user: Can you tell me the manufacturing materials?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the manufacturing materials?
+- test_case: What's the deal with Yamaha XMAX 300
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: XMAX 300
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: XMAX 300
+  - user: Do you know the hybrid capabilities?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the hybrid capabilities?
+- test_case: Any news on Yamaha XMAX 300
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: XMAX 300
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: XMAX 300
+  - user: What is the horsepower rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the horsepower rating?
+- test_case: ' Yamaha YZ85'
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: YZ85
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: YZ85
+  - user: Could you find the production locations?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the production locations?
+- test_case: What's up with Yamaha YZ85
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: YZ85
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: YZ85
+  - user: Could you find the safety ratings?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the safety ratings?
+- test_case: Any news on Yamaha FZ-S Fi
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: FZ-S Fi
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FZ-S Fi
+  - user: What is the crash test rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the crash test rating?
+- test_case: Clue me in about Yamaha FZ-S Fi
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: FZ-S Fi
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FZ-S Fi
+  - user: What is the service interval?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the service interval?
+- test_case: What's the story with Yamaha Tracer 7
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: Tracer 7
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Tracer 7
+  - user: What is the current market price?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the current market price?
+- test_case: What's the story with Yamaha Tracer 7
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: Tracer 7
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Tracer 7
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: Any news on Yamaha Jupiter Z1
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: Jupiter Z1
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Jupiter Z1
+  - user: Do you have the dimensions?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the dimensions?
+- test_case: Any news on Yamaha Jupiter Z1
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: Jupiter Z1
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Jupiter Z1
+  - user: What is the braking system like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the braking system like?
+- test_case: Spill the beans about Yamaha R1 Race
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: R1 Race
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R1 Race
+  - user: Could you find out the torque?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the torque?
+- test_case: Got any details on Yamaha R1 Race
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: R1 Race
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R1 Race
+  - user: What is the emissions rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the emissions rating?
+- test_case: ' Yamaha TT-R110E'
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: TT-R110E
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TT-R110E
+  - user: How fast can it go?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: How fast can it go?
+- test_case: ' Yamaha TT-R110E'
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: TT-R110E
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TT-R110E
+  - user: What is the emissions rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the emissions rating?
+- test_case: Let me know about Yamaha Tenere 700 Explore
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: Tenere 700 Explore
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Tenere 700 Explore
+  - user: What is the seat height?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the seat height?
+- test_case: What's the story with Yamaha Tenere 700 Explore
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: Tenere 700 Explore
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Tenere 700 Explore
+  - user: Do you know the hybrid capabilities?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the hybrid capabilities?
+- test_case: What's up with Yamaha FZ-X
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: FZ-X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FZ-X
+  - user: Can you tell me the manufacturing materials?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the manufacturing materials?
+- test_case: Give me the rundown on Yamaha FZ-X
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: FZ-X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FZ-X
+  - user: What is the crash test rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the crash test rating?
+- test_case: ' Yamaha R6 Race'
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: R6 Race
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R6 Race
+  - user: Could you check the user reviews?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you check the user reviews?
+- test_case: Let me know about Yamaha R6 Race
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: R6 Race
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R6 Race
+  - user: Do you have information on the engine specifications?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have information on the engine specifications?
+- test_case: Fill me in on Yamaha YZ125X
+  steps:
+  - user: Could you help me find details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: YZ125X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: YZ125X
+  - user: I'm interested in the interior features.
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: I'm interested in the interior features.
+- test_case: What's up with Yamaha YZ125X
+  steps:
+  - user: Could you help me find details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: YZ125X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: YZ125X
+  - user: Do you have information on the engine specifications?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have information on the engine specifications?
+- test_case: What's the story with Yamaha TW200
+  steps:
+  - user: Could you help me find details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: TW200
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TW200
+  - user: Could you find the safety ratings?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the safety ratings?
+- test_case: Give me the scoop on Yamaha TW200
+  steps:
+  - user: Could you help me find details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: TW200
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TW200
+  - user: Could you find out the torque?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the torque?
+- test_case: ' Yamaha Tracer 7'
+  steps:
+  - user: Could you help me find details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: Tracer 7
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Tracer 7
+  - user: Could you check the user reviews?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you check the user reviews?
+- test_case: Any news on Yamaha Tracer 7
+  steps:
+  - user: Could you help me find details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: Tracer 7
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Tracer 7
+  - user: What is the fuel efficiency?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the fuel efficiency?
+- test_case: Let me know about KTM 300 EXC HardEnduro
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 300 EXC HardEnduro
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 300 EXC HardEnduro
+  - user: What is the climate control system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the climate control system?
+- test_case: Any news on KTM 300 EXC HardEnduro
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 300 EXC HardEnduro
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 300 EXC HardEnduro
+  - user: What is the electric range?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the electric range?
+- test_case: Enlighten me on KTM 350 EXC-F Champion
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 350 EXC-F Champion
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 350 EXC-F Champion
+  - user: What is the horsepower rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the horsepower rating?
+- test_case: ' KTM 350 EXC-F Champion'
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 350 EXC-F Champion
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 350 EXC-F Champion
+  - user: What is the warranty coverage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the warranty coverage?
+- test_case: ' KTM 300 XC-W Factory'
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 300 XC-W Factory
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 300 XC-W Factory
+  - user: What is the seat height?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the seat height?
+- test_case: What's the story with KTM 300 XC-W Factory
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 300 XC-W Factory
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 300 XC-W Factory
+  - user: What is the climate control system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the climate control system?
+- test_case: Got any details on KTM 890 Duke R
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 890 Duke R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 890 Duke R
+  - user: What is the navigation system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the navigation system?
+- test_case: Tell me about KTM 890 Duke R
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 890 Duke R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 890 Duke R
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: ' KTM 300 XC'
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 300 XC
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 300 XC
+  - user: Could you find the safety ratings?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the safety ratings?
+- test_case: ' KTM 300 XC'
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 300 XC
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 300 XC
+  - user: Do you know the tire size?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the tire size?
+- test_case: ' KTM 1390 Super Adventure S Evo'
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 1390 Super Adventure S Evo
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 1390 Super Adventure S Evo
+  - user: Can you tell me about the lighting system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me about the lighting system?
+- test_case: ' KTM 1390 Super Adventure S Evo'
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 1390 Super Adventure S Evo
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 1390 Super Adventure S Evo
+  - user: What is the exterior design like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the exterior design like?
+- test_case: Fill me in on KTM 250 EXC
+  steps:
+  - user: Can you search for a specific car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 250 EXC
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 250 EXC
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: ' KTM 250 EXC'
+  steps:
+  - user: Can you search for a specific car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 250 EXC
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 250 EXC
+  - user: What is the electric range?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the electric range?
+- test_case: Let me know about KTM 890 Adventure R Rally
+  steps:
+  - user: Can you search for a specific car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 890 Adventure R Rally
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 890 Adventure R Rally
+  - user: Could you find out the torque?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the torque?
+- test_case: Got any details on KTM 890 Adventure R Rally
+  steps:
+  - user: Can you search for a specific car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 890 Adventure R Rally
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 890 Adventure R Rally
+  - user: How fast can it go?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: How fast can it go?
+- test_case: ' KTM 350 EXC-F'
+  steps:
+  - user: Can you search for a specific car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 350 EXC-F
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 350 EXC-F
+  - user: Could you find out the insurance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the insurance cost?
+- test_case: What's the story with KTM 350 EXC-F
+  steps:
+  - user: Can you search for a specific car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 350 EXC-F
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 350 EXC-F
+  - user: What is the availability?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the availability?
+- test_case: Got any details on KTM 350 SX-F
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 350 SX-F
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 350 SX-F
+  - user: What is the warranty coverage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the warranty coverage?
+- test_case: ' KTM 350 SX-F'
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 350 SX-F
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 350 SX-F
+  - user: What is the current market price?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the current market price?
+- test_case: Share some info about KTM 350 SX-F
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 350 SX-F
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 350 SX-F
+  - user: Can you find the sound system details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the sound system details?
+- test_case: ' KTM 350 SX-F'
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 350 SX-F
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 350 SX-F
+  - user: Can you tell me the number of cylinders?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the number of cylinders?
+- test_case: What's the lowdown on KTM 350 XC-F Factory
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 350 XC-F Factory
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 350 XC-F Factory
+  - user: Could you find the production locations?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the production locations?
+- test_case: Got any details on KTM 350 XC-F Factory
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 350 XC-F Factory
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 350 XC-F Factory
+  - user: What is the crash test rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the crash test rating?
+- test_case: What can you tell me about KTM 250 XC-W
+  steps:
+  - user: Can you assist me in finding details about a certain car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 250 XC-W
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 250 XC-W
+  - user: What is the popularity ranking?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the popularity ranking?
+- test_case: ' KTM 250 XC-W'
+  steps:
+  - user: Can you assist me in finding details about a certain car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 250 XC-W
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 250 XC-W
+  - user: Can you tell me the resale value?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the resale value?
+- test_case: ' KTM 250 XC'
+  steps:
+  - user: Can you assist me in finding details about a certain car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 250 XC
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 250 XC
+  - user: Do you know the maintenance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the maintenance cost?
+- test_case: Any news on KTM 250 XC
+  steps:
+  - user: Can you assist me in finding details about a certain car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 250 XC
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 250 XC
+  - user: Do you know the maintenance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the maintenance cost?
+- test_case: What's the lowdown on KTM 250 XC-F
+  steps:
+  - user: Can you assist me in finding details about a certain car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 250 XC-F
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 250 XC-F
+  - user: What is the navigation system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the navigation system?
+- test_case: ' KTM 250 XC-F'
+  steps:
+  - user: Can you assist me in finding details about a certain car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 250 XC-F
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 250 XC-F
+  - user: What are the safety features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the safety features?
+- test_case: ' Suzuki DR650S'
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: DR650S
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DR650S
+  - user: Could you find out the torque?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the torque?
+- test_case: What's the lowdown on Suzuki DR650S
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: DR650S
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DR650S
+  - user: What is the current market price?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the current market price?
+- test_case: ' Suzuki GSX250R'
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: GSX250R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: GSX250R
+  - user: I'm interested in the interior features.
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: I'm interested in the interior features.
+- test_case: Enlighten me on Suzuki GSX250R
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: GSX250R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: GSX250R
+  - user: Do you know the maintenance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the maintenance cost?
+- test_case: Any news on Suzuki GSX-S1000GT Plus
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: GSX-S1000GT Plus
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: GSX-S1000GT Plus
+  - user: What are the customization options?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the customization options?
+- test_case: What's up with Suzuki GSX-S1000GT Plus
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: GSX-S1000GT Plus
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: GSX-S1000GT Plus
+  - user: What is the current market price?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the current market price?
+- test_case: Tell me about Suzuki DR-Z400E Cape York
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: DR-Z400E Cape York
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DR-Z400E Cape York
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: Give me the scoop on Suzuki DR-Z400E Cape York
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: DR-Z400E Cape York
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DR-Z400E Cape York
+  - user: What is the climate control system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the climate control system?
+- test_case: What's up with Suzuki Trojan
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: Trojan
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Trojan
+  - user: What are the safety features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the safety features?
+- test_case: Give me the rundown on Suzuki Trojan
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: Trojan
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Trojan
+  - user: How fast can it go?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: How fast can it go?
+- test_case: What's the deal with Suzuki V-Strom 1050 Tour
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: V-Strom 1050 Tour
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: V-Strom 1050 Tour
+  - user: What is the exterior design like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the exterior design like?
+- test_case: Let me know about Suzuki V-Strom 1050 Tour
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: V-Strom 1050 Tour
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: V-Strom 1050 Tour
+  - user: I'm interested in the interior features.
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: I'm interested in the interior features.
+- test_case: Share some info about Suzuki Gixxer 250
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: Gixxer 250
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Gixxer 250
+  - user: What is the towing capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the towing capacity?
+- test_case: Enlighten me on Suzuki Gixxer 250
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: Gixxer 250
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Gixxer 250
+  - user: What is the crash test rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the crash test rating?
+- test_case: ' Suzuki Boulevard C50'
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: Boulevard C50
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Boulevard C50
+  - user: What are the customization options?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the customization options?
+- test_case: ' Suzuki Boulevard C50'
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: Boulevard C50
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Boulevard C50
+  - user: What is the current market price?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the current market price?
+- test_case: Share some info about Suzuki V-Strom 800
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: V-Strom 800
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: V-Strom 800
+  - user: What is the brand reputation?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the brand reputation?
+- test_case: Spill the beans about Suzuki V-Strom 800
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: V-Strom 800
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: V-Strom 800
+  - user: What is the horsepower rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the horsepower rating?
+- test_case: Let me know about Suzuki GSX-S950
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: GSX-S950
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: GSX-S950
+  - user: Do you know the key competitors?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the key competitors?
+- test_case: Any news on Suzuki GSX-S950
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: GSX-S950
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: GSX-S950
+  - user: What is the electric range?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the electric range?
+- test_case: Clue me in about Suzuki GSX-R1000
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: GSX-R1000
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: GSX-R1000
+  - user: Can you tell me the manufacturing materials?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the manufacturing materials?
+- test_case: Enlighten me on Suzuki GSX-R1000
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: GSX-R1000
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: GSX-R1000
+  - user: Could you find out the insurance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the insurance cost?
+- test_case: Share some info about Suzuki V-Strom 1050XT Tour
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: V-Strom 1050XT Tour
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: V-Strom 1050XT Tour
+  - user: Could you find the production locations?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the production locations?
+- test_case: ' Suzuki V-Strom 1050XT Tour'
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: V-Strom 1050XT Tour
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: V-Strom 1050XT Tour
+  - user: What is the history of this model?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the history of this model?
+- test_case: Give me the scoop on Suzuki Best 125 Fi
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: Best 125 Fi
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Best 125 Fi
+  - user: What type of suspension does it have?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What type of suspension does it have?
+- test_case: Clue me in about Suzuki Best 125 Fi
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: Best 125 Fi
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Best 125 Fi
+  - user: Do you know the maintenance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the maintenance cost?
+- test_case: What's the lowdown on Suzuki DR-Z400E Cape York
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: DR-Z400E Cape York
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DR-Z400E Cape York
+  - user: What is the mileage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the mileage?
+- test_case: ' Suzuki DR-Z400E Cape York'
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: DR-Z400E Cape York
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DR-Z400E Cape York
+  - user: Do you know the hybrid capabilities?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the hybrid capabilities?
+- test_case: Share some info about Suzuki Boulevard M109R
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: Boulevard M109R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Boulevard M109R
+  - user: What is the climate control system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the climate control system?
+- test_case: Spill the beans about Suzuki Boulevard M109R
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: Boulevard M109R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Boulevard M109R
+  - user: What is the history of this model?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the history of this model?
+- test_case: Any news on Triumph Tiger 900 GT
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Tiger 900 GT
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Tiger 900 GT
+  - user: Could you find out the insurance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the insurance cost?
+- test_case: ' Triumph Tiger 900 GT'
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Tiger 900 GT
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Tiger 900 GT
+  - user: How fast can it go?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: How fast can it go?
+- test_case: What's up with Triumph Tiger Sport 660
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Tiger Sport 660
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Tiger Sport 660
+  - user: What is the exterior design like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the exterior design like?
+- test_case: Let me know about Triumph Tiger Sport 660
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Tiger Sport 660
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Tiger Sport 660
+  - user: Do you have the color options?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the color options?
+- test_case: ' Triumph TE-1'
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: TE-1
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TE-1
+  - user: What is the braking system like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the braking system like?
+- test_case: Enlighten me on Triumph TE-1
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: TE-1
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TE-1
+  - user: What is the emissions rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the emissions rating?
+- test_case: What can you tell me about Triumph Bonneville T100 Gold Line
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Bonneville T100 Gold Line
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Bonneville T100 Gold Line
+  - user: Could you find out the torque?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the torque?
+- test_case: Spill the beans about Triumph Bonneville T100 Gold Line
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Bonneville T100 Gold Line
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Bonneville T100 Gold Line
+  - user: Do you know the key competitors?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the key competitors?
+- test_case: Share some info about Triumph Street Triple 765 RS
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Street Triple 765 RS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Street Triple 765 RS
+  - user: What is the reliability rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the reliability rating?
+- test_case: ' Triumph Street Triple 765 RS'
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Street Triple 765 RS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Street Triple 765 RS
+  - user: What are the safety features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the safety features?
+- test_case: ' Triumph Tiger Sport 660'
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Tiger Sport 660
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Tiger Sport 660
+  - user: Do you know the hybrid capabilities?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the hybrid capabilities?
+- test_case: Let me know about Triumph Tiger Sport 660
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Tiger Sport 660
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Tiger Sport 660
+  - user: Can you tell me about the lighting system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me about the lighting system?
+- test_case: ' Triumph Street Twin Gold Line'
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Street Twin Gold Line
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Street Twin Gold Line
+  - user: What is the towing capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the towing capacity?
+- test_case: Spill the beans about Triumph Street Twin Gold Line
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Street Twin Gold Line
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Street Twin Gold Line
+  - user: What is the popularity ranking?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the popularity ranking?
+- test_case: ' Triumph Scrambler 1200 XE'
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Scrambler 1200 XE
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Scrambler 1200 XE
+  - user: Do you know the hybrid capabilities?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the hybrid capabilities?
+- test_case: Let me know about Triumph Scrambler 1200 XE
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Scrambler 1200 XE
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Scrambler 1200 XE
+  - user: Can you provide the weight details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you provide the weight details?
+- test_case: What's up with Triumph Trident 660
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Trident 660
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Trident 660
+  - user: What is the electric range?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the electric range?
+- test_case: ' Triumph Trident 660'
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Trident 660
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Trident 660
+  - user: I'm curious about the fuel capacity.
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: I'm curious about the fuel capacity.
+- test_case: Share some info about Triumph Bonneville T100 Stealth Edition
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Bonneville T100 Stealth Edition
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Bonneville T100 Stealth Edition
+  - user: Do you know the hybrid capabilities?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the hybrid capabilities?
+- test_case: ' Triumph Bonneville T100 Stealth Edition'
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Bonneville T100 Stealth Edition
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Bonneville T100 Stealth Edition
+  - user: Do you have the dimensions?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the dimensions?
+- test_case: ' Triumph Rocket 3 GT'
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Rocket 3 GT
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Rocket 3 GT
+  - user: Can you tell me about the lighting system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me about the lighting system?
+- test_case: ' Triumph Rocket 3 GT'
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Rocket 3 GT
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Rocket 3 GT
+  - user: Do you know the key competitors?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the key competitors?
+- test_case: ' Triumph Trident 660 Triple Tribute Edition'
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Trident 660 Triple Tribute Edition
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Trident 660 Triple Tribute Edition
+  - user: Could you check the user reviews?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you check the user reviews?
+- test_case: Let me know about Triumph Trident 660 Triple Tribute Edition
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Trident 660 Triple Tribute Edition
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Trident 660 Triple Tribute Edition
+  - user: What is the reliability rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the reliability rating?
+- test_case: Clue me in about Triumph Rocket 3 R Chrome Edition
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Rocket 3 R Chrome Edition
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Rocket 3 R Chrome Edition
+  - user: Do you know the maintenance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the maintenance cost?
+- test_case: Clue me in about Triumph Rocket 3 R Chrome Edition
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Rocket 3 R Chrome Edition
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Rocket 3 R Chrome Edition
+  - user: What is the climate control system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the climate control system?
+- test_case: Got any details on Triumph Bonneville T100 Chrome Edition
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Bonneville T100 Chrome Edition
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Bonneville T100 Chrome Edition
+  - user: What is the horsepower rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the horsepower rating?
+- test_case: Tell me about Triumph Bonneville T100 Chrome Edition
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Bonneville T100 Chrome Edition
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Bonneville T100 Chrome Edition
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: Got any details on Triumph Bonneville T120 Black Gold Line
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Bonneville T120 Black Gold Line
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Bonneville T120 Black Gold Line
+  - user: Could you find the release year?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the release year?
+- test_case: What's the deal with Triumph Bonneville T120 Black Gold Line
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Bonneville T120 Black Gold Line
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Bonneville T120 Black Gold Line
+  - user: How fast can it go?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: How fast can it go?
+- test_case: Enlighten me on Sym Symphony ST 50
+  steps:
+  - user: I want to know more about a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Symphony ST 50
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Symphony ST 50
+  - user: What is the fuel efficiency?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the fuel efficiency?
+- test_case: ' Sym Symphony ST 50'
+  steps:
+  - user: I want to know more about a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Symphony ST 50
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Symphony ST 50
+  - user: Could you find the safety ratings?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the safety ratings?
+- test_case: Give me the rundown on Sym FNX 125
+  steps:
+  - user: I want to know more about a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: FNX 125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FNX 125
+  - user: What is the current market price?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the current market price?
+- test_case: What's the lowdown on Sym FNX 125
+  steps:
+  - user: I want to know more about a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: FNX 125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FNX 125
+  - user: Can you tell me the resale value?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the resale value?
+- test_case: ' Sym Symphony SR 125'
+  steps:
+  - user: I want to know more about a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Symphony SR 125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Symphony SR 125
+  - user: Could you find out the insurance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the insurance cost?
+- test_case: Give me the rundown on Sym Symphony SR 125
+  steps:
+  - user: I want to know more about a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Symphony SR 125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Symphony SR 125
+  - user: Can you tell me the manufacturing materials?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the manufacturing materials?
+- test_case: Any news on Sym DRGBT 160
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: DRGBT 160
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DRGBT 160
+  - user: What is the service interval?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the service interval?
+- test_case: ' Sym DRGBT 160'
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: DRGBT 160
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DRGBT 160
+  - user: Could you find the safety ratings?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the safety ratings?
+- test_case: Any news on Sym Maxsym 400
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Maxsym 400
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Maxsym 400
+  - user: Can you tell me the number of cylinders?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the number of cylinders?
+- test_case: ' Sym Maxsym 400'
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Maxsym 400
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Maxsym 400
+  - user: Could you check the user reviews?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you check the user reviews?
+- test_case: Spill the beans about Sym Mio Electric
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Mio Electric
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Mio Electric
+  - user: What is the emissions rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the emissions rating?
+- test_case: Let me know about Sym Mio Electric
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Mio Electric
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Mio Electric
+  - user: What is the crash test rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the crash test rating?
+- test_case: ' Sym Maxsym TL 508'
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Maxsym TL 508
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Maxsym TL 508
+  - user: What is the climate control system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the climate control system?
+- test_case: ' Sym Maxsym TL 508'
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Maxsym TL 508
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Maxsym TL 508
+  - user: Could you find out the torque?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the torque?
+- test_case: ' Sym Fiddle 125 Liquid'
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Fiddle 125 Liquid
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Fiddle 125 Liquid
+  - user: Can you tell me the number of cylinders?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the number of cylinders?
+- test_case: Any news on Sym Fiddle 125 Liquid
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Fiddle 125 Liquid
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Fiddle 125 Liquid
+  - user: Can you tell me the manufacturing materials?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the manufacturing materials?
+- test_case: Give me the rundown on Sym Maxsym TL 508
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Maxsym TL 508
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Maxsym TL 508
+  - user: Do you have the color options?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the color options?
+- test_case: ' Sym Maxsym TL 508'
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Maxsym TL 508
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Maxsym TL 508
+  - user: Do you know the maintenance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the maintenance cost?
+- test_case: What's the lowdown on Sym Symphony Cargo 50
+  steps:
+  - user: I need help with a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Symphony Cargo 50
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Symphony Cargo 50
+  - user: Do you know the key competitors?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the key competitors?
+- test_case: Enlighten me on Sym Symphony Cargo 50
+  steps:
+  - user: I need help with a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Symphony Cargo 50
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Symphony Cargo 50
+  - user: What is the towing capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the towing capacity?
+- test_case: ' Sym SYMNH T 200'
+  steps:
+  - user: I need help with a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: SYMNH T 200
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: SYMNH T 200
+  - user: Can you provide the weight details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you provide the weight details?
+- test_case: ' Sym SYMNH T 200'
+  steps:
+  - user: I need help with a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: SYMNH T 200
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: SYMNH T 200
+  - user: What is the history of this model?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the history of this model?
+- test_case: Fill me in on Sym Jet 4 RX 125
+  steps:
+  - user: I need help with a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Jet 4 RX 125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Jet 4 RX 125
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: Let me know about Sym Jet 4 RX 125
+  steps:
+  - user: I need help with a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Jet 4 RX 125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Jet 4 RX 125
+  - user: Could you find the production locations?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the production locations?
+- test_case: What's up with Sym Maxsym 400 GT
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Maxsym 400 GT
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Maxsym 400 GT
+  - user: I'm curious about the fuel capacity.
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: I'm curious about the fuel capacity.
+- test_case: ' Sym Maxsym 400 GT'
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Maxsym 400 GT
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Maxsym 400 GT
+  - user: What is the service interval?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the service interval?
+- test_case: What's the lowdown on Sym Jet14 Evo 125 Liquid
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Jet14 Evo 125 Liquid
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Jet14 Evo 125 Liquid
+  - user: What is the navigation system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the navigation system?
+- test_case: What's the deal with Sym Jet14 Evo 125 Liquid
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Jet14 Evo 125 Liquid
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Jet14 Evo 125 Liquid
+  - user: What is the warranty coverage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the warranty coverage?
+- test_case: What's up with Sym X Pro 50
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: X Pro 50
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: X Pro 50
+  - user: What is the towing capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the towing capacity?
+- test_case: ' Sym X Pro 50'
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: X Pro 50
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: X Pro 50
+  - user: What is the exterior design like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the exterior design like?
+- test_case: ' Husqvarna TC 85 17-14'
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TC 85 17-14
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TC 85 17-14
+  - user: Do you have the infotainment features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the infotainment features?
+- test_case: ' Husqvarna TC 85 17-14'
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TC 85 17-14
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TC 85 17-14
+  - user: What is the reliability rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the reliability rating?
+- test_case: Tell me about Husqvarna TC 85 17-14
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TC 85 17-14
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TC 85 17-14
+  - user: What is the availability?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the availability?
+- test_case: ' Husqvarna TC 85 17-14'
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TC 85 17-14
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TC 85 17-14
+  - user: What are the customization options?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the customization options?
+- test_case: ' Husqvarna TC 250'
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TC 250
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TC 250
+  - user: Could you find out the insurance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the insurance cost?
+- test_case: ' Husqvarna TC 250'
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TC 250
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TC 250
+  - user: What is the exterior design like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the exterior design like?
+- test_case: ' Husqvarna 701 Enduro'
+  steps:
+  - user: I'm looking for details on a specific car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: 701 Enduro
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 701 Enduro
+  - user: Do you know the key competitors?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the key competitors?
+- test_case: ' Husqvarna 701 Enduro'
+  steps:
+  - user: I'm looking for details on a specific car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: 701 Enduro
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 701 Enduro
+  - user: What is the brand reputation?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the brand reputation?
+- test_case: Tell me about Husqvarna FE 450 Heritage
+  steps:
+  - user: I'm looking for details on a specific car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FE 450 Heritage
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FE 450 Heritage
+  - user: What is the mileage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the mileage?
+- test_case: ' Husqvarna FE 450 Heritage'
+  steps:
+  - user: I'm looking for details on a specific car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FE 450 Heritage
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FE 450 Heritage
+  - user: What type of suspension does it have?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What type of suspension does it have?
+- test_case: ' Husqvarna FC 250 Heritage'
+  steps:
+  - user: I'm looking for details on a specific car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FC 250 Heritage
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FC 250 Heritage
+  - user: Do you know the tire size?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the tire size?
+- test_case: Clue me in about Husqvarna FC 250 Heritage
+  steps:
+  - user: I'm looking for details on a specific car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FC 250 Heritage
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FC 250 Heritage
+  - user: What are the safety features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the safety features?
+- test_case: Clue me in about Husqvarna FX 450
+  steps:
+  - user: I'm searching for information regarding a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FX 450
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FX 450
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: ' Husqvarna FX 450'
+  steps:
+  - user: I'm searching for information regarding a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FX 450
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FX 450
+  - user: Can you tell me the manufacturing materials?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the manufacturing materials?
+- test_case: What can you tell me about Husqvarna EE 2
+  steps:
+  - user: I'm searching for information regarding a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: EE 2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: EE 2
+  - user: Do you know the key competitors?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the key competitors?
+- test_case: Any news on Husqvarna EE 2
+  steps:
+  - user: I'm searching for information regarding a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: EE 2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: EE 2
+  - user: Do you have the dimensions?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the dimensions?
+- test_case: ' Husqvarna FS 450'
+  steps:
+  - user: I'm searching for information regarding a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FS 450
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FS 450
+  - user: Could you find the safety ratings?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the safety ratings?
+- test_case: What's the lowdown on Husqvarna FS 450
+  steps:
+  - user: I'm searching for information regarding a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FS 450
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FS 450
+  - user: What is the horsepower rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the horsepower rating?
+- test_case: ' Husqvarna TC 85 19-16'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TC 85 19-16
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TC 85 19-16
+  - user: What is the reliability rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the reliability rating?
+- test_case: ' Husqvarna TC 85 19-16'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TC 85 19-16
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TC 85 19-16
+  - user: What is the seat height?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the seat height?
+- test_case: ' Husqvarna TE 250 Heritage'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TE 250 Heritage
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TE 250 Heritage
+  - user: Can you provide the weight details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you provide the weight details?
+- test_case: Tell me about Husqvarna TE 250 Heritage
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TE 250 Heritage
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TE 250 Heritage
+  - user: What are the customization options?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the customization options?
+- test_case: ' Husqvarna TC 85 19-16'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TC 85 19-16
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TC 85 19-16
+  - user: Can you tell me the manufacturing materials?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the manufacturing materials?
+- test_case: Tell me about Husqvarna TC 85 19-16
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TC 85 19-16
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TC 85 19-16
+  - user: Do you have the dimensions?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the dimensions?
+- test_case: ' Husqvarna FX 350'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FX 350
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FX 350
+  - user: Can you tell me about the lighting system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me about the lighting system?
+- test_case: Fill me in on Husqvarna FX 350
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FX 350
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FX 350
+  - user: What is the seat height?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the seat height?
+- test_case: ' Husqvarna FS 450'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FS 450
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FS 450
+  - user: Can you tell me the number of cylinders?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the number of cylinders?
+- test_case: ' Husqvarna FS 450'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FS 450
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FS 450
+  - user: What is the maximum load capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the maximum load capacity?
+- test_case: ' Husqvarna TC 250'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TC 250
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TC 250
+  - user: How fast can it go?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: How fast can it go?
+- test_case: ' Husqvarna TC 250'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: TC 250
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TC 250
+  - user: What is the mileage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the mileage?
+- test_case: What's up with BMW M 1000 XR
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: M 1000 XR
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: M 1000 XR
+  - user: What are the safety features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the safety features?
+- test_case: Enlighten me on BMW M 1000 XR
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: M 1000 XR
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: M 1000 XR
+  - user: What is the electric range?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the electric range?
+- test_case: Enlighten me on BMW C 400 GT
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: C 400 GT
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: C 400 GT
+  - user: What is the reliability rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the reliability rating?
+- test_case: What can you tell me about BMW C 400 GT
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: C 400 GT
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: C 400 GT
+  - user: Could you find the safety ratings?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the safety ratings?
+- test_case: What's the story with BMW R 1300 GS Adventure
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R 1300 GS Adventure
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R 1300 GS Adventure
+  - user: Do you have the dimensions?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the dimensions?
+- test_case: Give me the scoop on BMW R 1300 GS Adventure
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R 1300 GS Adventure
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R 1300 GS Adventure
+  - user: What is the emissions rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the emissions rating?
+- test_case: Clue me in about BMW R 18 B
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R 18 B
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R 18 B
+  - user: What is the seat height?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the seat height?
+- test_case: Got any details on BMW R 18 B
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R 18 B
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R 18 B
+  - user: Can you tell me the number of cylinders?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the number of cylinders?
+- test_case: ' BMW K 1600 GTL'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: K 1600 GTL
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: K 1600 GTL
+  - user: What type of suspension does it have?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What type of suspension does it have?
+- test_case: Enlighten me on BMW K 1600 GTL
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: K 1600 GTL
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: K 1600 GTL
+  - user: Do you know the tire size?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the tire size?
+- test_case: ' BMW R18 Classic'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R18 Classic
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R18 Classic
+  - user: Can you provide the weight details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you provide the weight details?
+- test_case: ' BMW R18 Classic'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R18 Classic
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R18 Classic
+  - user: Can you tell me the resale value?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the resale value?
+- test_case: ' BMW R nineT Scrambler'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R nineT Scrambler
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R nineT Scrambler
+  - user: Can you provide the weight details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you provide the weight details?
+- test_case: ' BMW R nineT Scrambler'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R nineT Scrambler
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R nineT Scrambler
+  - user: Do you have the infotainment features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the infotainment features?
+- test_case: What's up with BMW R 18 Transcontinental
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R 18 Transcontinental
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R 18 Transcontinental
+  - user: What is the exterior design like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the exterior design like?
+- test_case: Fill me in on BMW R 18 Transcontinental
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R 18 Transcontinental
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R 18 Transcontinental
+  - user: What is the exterior design like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the exterior design like?
+- test_case: ' BMW F 750 GS'
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: F 750 GS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: F 750 GS
+  - user: What are the customization options?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the customization options?
+- test_case: What can you tell me about BMW F 750 GS
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: F 750 GS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: F 750 GS
+  - user: Do you know the hybrid capabilities?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the hybrid capabilities?
+- test_case: Give me the rundown on BMW R 18 Roctane
+  steps:
+  - user: I need help with a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R 18 Roctane
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R 18 Roctane
+  - user: What is the warranty coverage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the warranty coverage?
+- test_case: ' BMW R 18 Roctane'
+  steps:
+  - user: I need help with a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R 18 Roctane
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R 18 Roctane
+  - user: Can you tell me the number of cylinders?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the number of cylinders?
+- test_case: Let me know about BMW R nineT Urban GS
+  steps:
+  - user: I need help with a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R nineT Urban GS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R nineT Urban GS
+  - user: What is the ground clearance?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the ground clearance?
+- test_case: ' BMW R nineT Urban GS'
+  steps:
+  - user: I need help with a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R nineT Urban GS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R nineT Urban GS
+  - user: Can you tell me about the lighting system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me about the lighting system?
+- test_case: ' BMW R nineT 100 Years'
+  steps:
+  - user: I need help with a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R nineT 100 Years
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R nineT 100 Years
+  - user: What is the emissions rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the emissions rating?
+- test_case: Spill the beans about BMW R nineT 100 Years
+  steps:
+  - user: I need help with a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R nineT 100 Years
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R nineT 100 Years
+  - user: What is the brand reputation?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the brand reputation?
+- test_case: Enlighten me on BMW G 310 GS
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: G 310 GS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: G 310 GS
+  - user: What is the brand reputation?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the brand reputation?
+- test_case: ' BMW G 310 GS'
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: G 310 GS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: G 310 GS
+  - user: Do you have the infotainment features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the infotainment features?
+- test_case: ' BMW K 1600 Grand America Midnight'
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: K 1600 Grand America Midnight
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: K 1600 Grand America Midnight
+  - user: What is the availability?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the availability?
+- test_case: Any news on BMW K 1600 Grand America Midnight
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: K 1600 Grand America Midnight
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: K 1600 Grand America Midnight
+  - user: Can you provide the weight details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you provide the weight details?
+- test_case: Spill the beans about BMW R 1250 RT
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R 1250 RT
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R 1250 RT
+  - user: Do you have the infotainment features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the infotainment features?
+- test_case: Any news on BMW R 1250 RT
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: R 1250 RT
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: R 1250 RT
+  - user: Do you know the tire size?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the tire size?
+- test_case: ' Ducati Streetfighter V2'
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Streetfighter V2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Streetfighter V2
+  - user: What is the braking system like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the braking system like?
+- test_case: ' Ducati Streetfighter V2'
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Streetfighter V2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Streetfighter V2
+  - user: Do you have the color options?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the color options?
+- test_case: Enlighten me on Ducati Multistrada V4S Grand Tour
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Multistrada V4S Grand Tour
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Multistrada V4S Grand Tour
+  - user: What is the history of this model?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the history of this model?
+- test_case: What's up with Ducati Multistrada V4S Grand Tour
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Multistrada V4S Grand Tour
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Multistrada V4S Grand Tour
+  - user: Could you find the production locations?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the production locations?
+- test_case: ' Ducati Monster Senna'
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Monster Senna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Monster Senna
+  - user: What is the towing capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the towing capacity?
+- test_case: ' Ducati Monster Senna'
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Monster Senna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Monster Senna
+  - user: Do you have the sales figures?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the sales figures?
+- test_case: ' Ducati V21L'
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: V21L
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: V21L
+  - user: Can you tell me about the lighting system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me about the lighting system?
+- test_case: What can you tell me about Ducati V21L
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: V21L
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: V21L
+  - user: Do you know the maintenance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the maintenance cost?
+- test_case: What can you tell me about Ducati Streetfighter V4 S
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Streetfighter V4 S
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Streetfighter V4 S
+  - user: What is the emissions rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the emissions rating?
+- test_case: ' Ducati Streetfighter V4 S'
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Streetfighter V4 S
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Streetfighter V4 S
+  - user: Do you have the dimensions?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the dimensions?
+- test_case: What's the deal with Ducati Streetfighter V4 SP2
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Streetfighter V4 SP2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Streetfighter V4 SP2
+  - user: What is the electric range?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the electric range?
+- test_case: Fill me in on Ducati Streetfighter V4 SP2
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Streetfighter V4 SP2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Streetfighter V4 SP2
+  - user: What is the towing capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the towing capacity?
+- test_case: Spill the beans about Ducati Panigale V4 SP2
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Panigale V4 SP2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Panigale V4 SP2
+  - user: Do you know the key competitors?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the key competitors?
+- test_case: Spill the beans about Ducati Panigale V4 SP2
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Panigale V4 SP2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Panigale V4 SP2
+  - user: What is the crash test rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the crash test rating?
+- test_case: ' Ducati DesertX 937 Discovery'
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: DesertX 937 Discovery
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DesertX 937 Discovery
+  - user: Could you find out the torque?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the torque?
+- test_case: Share some info about Ducati DesertX 937 Discovery
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: DesertX 937 Discovery
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DesertX 937 Discovery
+  - user: What is the horsepower rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the horsepower rating?
+- test_case: Spill the beans about Ducati Multistrada V2
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Multistrada V2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Multistrada V2
+  - user: Do you have the infotainment features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the infotainment features?
+- test_case: What's up with Ducati Multistrada V2
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Multistrada V2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Multistrada V2
+  - user: Do you know the hybrid capabilities?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the hybrid capabilities?
+- test_case: Fill me in on Ducati DesertX Rally
+  steps:
+  - user: Can you guide me on a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: DesertX Rally
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DesertX Rally
+  - user: What is the popularity ranking?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the popularity ranking?
+- test_case: Enlighten me on Ducati DesertX Rally
+  steps:
+  - user: Can you guide me on a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: DesertX Rally
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DesertX Rally
+  - user: What is the climate control system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the climate control system?
+- test_case: ' Ducati Hypermotard 950 RVE'
+  steps:
+  - user: Can you guide me on a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Hypermotard 950 RVE
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Hypermotard 950 RVE
+  - user: Do you have the infotainment features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the infotainment features?
+- test_case: ' Ducati Hypermotard 950 RVE'
+  steps:
+  - user: Can you guide me on a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Hypermotard 950 RVE
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Hypermotard 950 RVE
+  - user: Could you find the safety ratings?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the safety ratings?
+- test_case: What's the story with Ducati Hypermotard 698 Mono RVE
+  steps:
+  - user: Can you guide me on a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Hypermotard 698 Mono RVE
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Hypermotard 698 Mono RVE
+  - user: Can you tell me about the lighting system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me about the lighting system?
+- test_case: ' Ducati Hypermotard 698 Mono RVE'
+  steps:
+  - user: Can you guide me on a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Hypermotard 698 Mono RVE
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Hypermotard 698 Mono RVE
+  - user: Can you provide the weight details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you provide the weight details?
+- test_case: Spill the beans about Ducati DesertX 937
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: DesertX 937
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DesertX 937
+  - user: What is the mileage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the mileage?
+- test_case: ' Ducati DesertX 937'
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: DesertX 937
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DesertX 937
+  - user: What is the crash test rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the crash test rating?
+- test_case: Give me the rundown on Ducati DesertX 937 Discovery
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: DesertX 937 Discovery
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DesertX 937 Discovery
+  - user: Can you tell me the number of cylinders?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the number of cylinders?
+- test_case: Enlighten me on Ducati DesertX 937 Discovery
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: DesertX 937 Discovery
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: DesertX 937 Discovery
+  - user: What type of suspension does it have?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What type of suspension does it have?
+- test_case: Fill me in on Ducati Streetfighter V4 Supreme
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Streetfighter V4 Supreme
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Streetfighter V4 Supreme
+  - user: Could you find out the insurance cost?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the insurance cost?
+- test_case: ' Ducati Streetfighter V4 Supreme'
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Streetfighter V4 Supreme
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Streetfighter V4 Supreme
+  - user: Could you find the safety ratings?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the safety ratings?

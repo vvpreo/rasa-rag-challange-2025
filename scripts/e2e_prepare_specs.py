@@ -1,23 +1,15 @@
 #! .venv/bin/python
-import json
-from collections import defaultdict
-from pprint import pprint
 import random
-from typing import List
 
-import yaml
-from pydantic import BaseModel, Field
-
-from scripts import moto_db
-from scripts.apptools import query_openrouter_fast, get_variations_of
 import rasa_test_suite as rts
+from scripts import moto_db
 
 
 def clear_non_alphanum(text) -> str:
     return ''.join(char for char in text if char.isalnum() or char == ' ')
 
 
-FNAME_PREPEND = './tests/e2e_other/specs__'
+FNAME_PREPEND = './tests/e2e_finetune/specs__'
 
 # special_req_variations = get_variations_of('''
 # I need you to generate me what exactly user may ask additionally
@@ -87,93 +79,95 @@ mm_intro_vars = [
     "What's the lowdown on", "Got any details on", "Let me know about", "What's the story with", "Any news on",
     "Clue me in about", "Give me the rundown on", "Spill the beans about"]
 
+# ppp = '''
+# Call 'vehicles_search_by_make_or_model' flow if:
+# - User asks to search info about particular make and/or model. Examples:
+# - USER: Help me with specific model
+# '''
+# get_variations_of("Help me with specific model in this context:\n" + ppp, 30)
+intro_variations = [
+    "Can you assist me with a particular model?", "I'm looking for information on a certain model.",
+    "Could you provide details about a specific vehicle model?", "I need help with a particular car model.",
+    "Can you find information on a specific model for me?", "Can you search for a specific car model?",
+    "I would like to learn more about a certain vehicle model.", "Can you guide me on a particular model?",
+    "I'm interested in details about a specific model.", "Help me find information on a specific model.",
+    "Could you assist me with information on a particular model?",
+    "I'm looking for details on a specific car model.", "Can you help me with a certain vehicle model?",
+    "Please assist me in finding information about a specific model.",
+    "Could you provide information on a particular car model?", "I need details on a specific vehicle model.",
+    "Can you give me information about a specific model?", "Help me get information on a particular model.",
+    "I'm searching for information regarding a specific model.",
+    "Could you help me locate details about a certain model?",
+    "Can you provide me with details on a specific model?", "I want to know more about a particular car model.",
+    "Can you look up information on a specific model for me?", "I require information on a certain vehicle model.",
+    "Could you help me find details on a specific model?",
+    "Please provide information on a particular vehicle model.", "I need to know about a specific model.",
+    "Can you assist me in finding details about a certain car model?",
+    "I'd like help with a specific vehicle model.", "Can you offer information on a particular model?"]
+
 
 def gen_tests_for_make_and_models():
     makes = moto_db.get_list_of_makes()
     mm = [(m, moto_db.get_list_of_models(moto_db.get_specs_by_make(m))) for m in makes]
     mm = sorted(mm, key=lambda e: len(e[1]), reverse=True)
 
-    for make, models in mm[:10]:
-        ts = rts.RasaTestSuite()
-        print("FOR MAKE: ", make)
-        for model in random.choices(models, k=3):
-            print("FOR MODEL: ", model)
-            special_requests = random.choices(special_req_variations, k=2)
-            for special_request in special_requests:
-                print("\tFOR SPECIAL REQ: ", special_request)
-                intro_var = random.choice(mm_intro_vars)
-                tc = rts.TestCase(
-                    test_case=f"{intro_var} {make} {model}",
-                    steps=[
-                        rts.Step(
-                            user=f'{intro_var} {make} {model}'.strip(),
-                            assertions=[rts.Assertion(flow_started='vehicles_search_by_make_and_model')]
-                        ),
-                        rts.Step(
-                            user=make,
-                            assertions=[rts.Assertion(
-                                slot_was_set=[rts.SlotWasSetItem(name='user_search_specs_make', value=make)]
-                            )]
-                        ),
-                        rts.Step(
-                            user=model,
-                            assertions=[rts.Assertion(
-                                slot_was_set=[rts.SlotWasSetItem(name='user_search_specs_model', value=model)]
-                            )]
-                        ),
-                        rts.Step(
-                            user=special_request,
-                            assertions=[rts.Assertion(
-                                slot_was_set=[
-                                    rts.SlotWasSetItem(name='user_search_specific_request', value=special_request)]
-                            )]
-                        ),
-                    ]
-                )
-                ts.test_cases.append(tc)
-        ts.serialize(FNAME_PREPEND + 'make__' + make + '.yml')
-
-
-def gen_tests_for_variations():
-    # ppp = '''
-    # Call 'vehicles_search_by_make_or_model' flow if:
-    # - User asks to search info about particular make and/or model. Examples:
-    # - USER: Help me with specific model
-    # '''
-    # get_variations_of("Help me with specific model in this context:\n" + ppp, 30)
-    intro_variations = [
-        "Can you assist me with a particular model?", "I'm looking for information on a certain model.",
-        "Could you provide details about a specific vehicle model?", "I need help with a particular car model.",
-        "Can you find information on a specific model for me?", "Can you search for a specific car model?",
-        "I would like to learn more about a certain vehicle model.", "Can you guide me on a particular model?",
-        "I'm interested in details about a specific model.", "Help me find information on a specific model.",
-        "Could you assist me with information on a particular model?",
-        "I'm looking for details on a specific car model.", "Can you help me with a certain vehicle model?",
-        "Please assist me in finding information about a specific model.",
-        "Could you provide information on a particular car model?", "I need details on a specific vehicle model.",
-        "Can you give me information about a specific model?", "Help me get information on a particular model.",
-        "I'm searching for information regarding a specific model.",
-        "Could you help me locate details about a certain model?",
-        "Can you provide me with details on a specific model?", "I want to know more about a particular car model.",
-        "Can you look up information on a specific model for me?", "I require information on a certain vehicle model.",
-        "Could you help me find details on a specific model?",
-        "Please provide information on a particular vehicle model.", "I need to know about a specific model.",
-        "Can you assist me in finding details about a certain car model?",
-        "I'd like help with a specific vehicle model.", "Can you offer information on a particular model?"]
-
     ts = rts.RasaTestSuite()
-    for intro_text in intro_variations:
-        print("FOR INTRO: ", intro_text)
-        tc = rts.TestCase(
-            test_case=intro_text,
-            steps=[rts.Step(
-                user=intro_text,
-                assertions=[rts.Assertion(flow_started='vehicles_search_by_make_and_model')])]
-        )
-        ts.test_cases.append(tc)
-    ts.serialize(FNAME_PREPEND + 'intro__variations.yml')
+    for make, models in mm[:10]:
+        print("FOR MAKE: ", make)
+
+        for intro_text in random.choices(intro_variations, k=5):
+            for model in random.choices(models, k=3):
+                print("FOR MODEL: ", model)
+                special_requests = random.choices(special_req_variations, k=2)
+                for special_request in special_requests:
+                    print("\tFOR SPECIAL REQ: ", special_request)
+                    intro_var = random.choice(mm_intro_vars)
+                    tc = rts.TestCase(
+                        test_case=f"{intro_var} {make} {model}",
+                        steps=[
+                            rts.Step(
+                                user=f'{intro_text}'.strip(),
+                                assertions=[rts.Assertion(flow_started='vehicles_search_by_make_and_model')]
+                            ),
+                            rts.Step(
+                                user=make,
+                                assertions=[rts.Assertion(
+                                    slot_was_set=[rts.SlotWasSetItem(name='user_search_specs_make', value=make)]
+                                )]
+                            ),
+                            rts.Step(
+                                user=model,
+                                assertions=[rts.Assertion(
+                                    slot_was_set=[rts.SlotWasSetItem(name='user_search_specs_model', value=model)]
+                                )]
+                            ),
+                            rts.Step(
+                                user=special_request,
+                                assertions=[rts.Assertion(
+                                    slot_was_set=[
+                                        rts.SlotWasSetItem(name='user_search_specific_request', value=special_request)]
+                                )]
+                            ),
+                        ]
+                    )
+                    ts.test_cases.append(tc)
+    ts.serialize(FNAME_PREPEND + 'make_step_by_step_.yml')
+
+
+# def gen_tests_for_variations():
+#     ts = rts.RasaTestSuite()
+#     for intro_text in intro_variations:
+#         print("FOR INTRO: ", intro_text)
+#         tc = rts.TestCase(
+#             test_case=intro_text,
+#             steps=[rts.Step(
+#                 user=intro_text,
+#                 assertions=[rts.Assertion(flow_started='vehicles_search_by_make_and_model')])]
+#         )
+#         ts.test_cases.append(tc)
+#     ts.serialize(FNAME_PREPEND + 'intro__variations.yml')
 
 
 if __name__ == "__main__":
-    gen_tests_for_variations()
+    # gen_tests_for_variations()
     gen_tests_for_make_and_models()

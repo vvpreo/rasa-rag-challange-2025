@@ -1,0 +1,11 @@
+conversations:
+- original_test_case: ./tests/e2e_finetune/faq.yml::How to fix ABS malfunction on an ATV?
+  steps:
+  - user: How to fix ABS malfunction on an ATV?
+    llm_commands:
+    - start flow faq
+    passing_rephrasings:
+    - What steps should I take to resolve an ABS issue on my ATV?
+  - utter: utter_need_time
+  - bot: Check speed sensors
+  - utter: utter_can_do_something_else

@@ -1,0 +1,10 @@
+conversations:
+- original_test_case: ./tests/e2e_finetune/specs-intro.yml::Can you offer information on a particular model?
+  steps:
+  - user: Can you offer information on a particular model?
+    llm_commands:
+    - start flow vehicles_search_by_make_and_model
+    passing_rephrasings:
+    - Could you provide details about a specific model?
+  - bot: I can't find any brand, named None, I know only about models 2022-2025.03
+  - utter: utter_collect_user_search_specs_make

@@ -1,0 +1,7 @@
+conversations:
+- original_test_case: "./tests/e2e_finetune/bye.yml::BYE: I'm off to do other things."
+  steps:
+  - user: I'm off to do other things.
+    llm_commands:
+    - start flow good_bye_user
+  - utter: utter_say_good_bye_general
