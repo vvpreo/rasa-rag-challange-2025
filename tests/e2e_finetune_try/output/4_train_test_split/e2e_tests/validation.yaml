@@ -1,0 +1,14 @@
+fixtures: []
+metadata: []
+stub_custom_actions: {}
+test_cases:
+- test_case: 'BYE: Goodbye!'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Goodbye!
+- test_case: 'BYE: Bye for now.'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Bye for now.

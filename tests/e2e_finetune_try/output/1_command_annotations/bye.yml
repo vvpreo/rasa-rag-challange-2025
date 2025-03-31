@@ -1,0 +1,7 @@
+conversations:
+- original_test_case: './tests/e2e_finetune_try/bye.yml::BYE: Bye for now.'
+  steps:
+  - user: Bye for now.
+    llm_commands:
+    - start flow good_bye_user
+  - utter: utter_say_good_bye_general

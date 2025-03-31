@@ -1,0 +1,44 @@
+fixtures: []
+metadata: []
+stub_custom_actions: {}
+test_cases:
+- test_case: 'BYE: Goodbye!'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Goodbye!
+- test_case: 'BYE: Farewell!'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Farewell!
+- test_case: 'BYE: See you later.'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: See you later.
+- test_case: 'BYE: Take care!'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Take care!
+- test_case: 'BYE: Bye for now.'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Bye for now.
+- test_case: 'BYE: See you later.'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: See you later.
+- test_case: 'BYE: Take care!'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Take care!
+- test_case: 'BYE: Farewell!'
+  steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Farewell!
