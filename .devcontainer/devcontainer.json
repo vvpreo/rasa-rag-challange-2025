@@ -3,9 +3,6 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
-  "containerEnv": {
-    "TZ": "UTC"
-  },
   "customizations": {
     "vscode": {
       "extensions": [
