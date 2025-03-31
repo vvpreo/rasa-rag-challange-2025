@@ -1,0 +1,401 @@
+test_cases:
+- test_case: How to choose a motorcycle for beginners?
+  steps:
+  - user: How to choose a motorcycle for beginners?
+    assertions:
+    - flow_started: faq
+- test_case: What tires are suitable for different surfaces on an ATV?
+  steps:
+  - user: What tires are suitable for different surfaces on an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix scooter starting problems?
+  steps:
+  - user: How to fix scooter starting problems?
+    assertions:
+    - flow_started: faq
+- test_case: How to prevent ATV rollover?
+  steps:
+  - user: How to prevent ATV rollover?
+    assertions:
+    - flow_started: faq
+- test_case: How often should motorcycle oil be changed?
+  steps:
+  - user: How often should motorcycle oil be changed?
+    assertions:
+    - flow_started: faq
+- test_case: What to do when an electric scooter battery discharges?
+  steps:
+  - user: What to do when an electric scooter battery discharges?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose a scooter for city rides?
+  steps:
+  - user: How to choose a scooter for city rides?
+    assertions:
+    - flow_started: faq
+- test_case: How to adjust ATV suspension for different terrain types?
+  steps:
+  - user: How to adjust ATV suspension for different terrain types?
+    assertions:
+    - flow_started: faq
+- test_case: How to maintain a motorcycle chain?
+  steps:
+  - user: How to maintain a motorcycle chain?
+    assertions:
+    - flow_started: faq
+- test_case: What documents are needed for driving an ATV?
+  steps:
+  - user: What documents are needed for driving an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications improve scooter performance?
+  steps:
+  - user: What modifications improve scooter performance?
+    assertions:
+    - flow_started: faq
+- test_case: How to winterize a motorcycle?
+  steps:
+  - user: How to winterize a motorcycle?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose an ATV helmet?
+  steps:
+  - user: How to choose an ATV helmet?
+    assertions:
+    - flow_started: faq
+- test_case: How to eliminate scooter vibration at high speeds?
+  steps:
+  - user: How to eliminate scooter vibration at high speeds?
+    assertions:
+    - flow_started: faq
+- test_case: What brake fluids are suitable for motorcycles?
+  steps:
+  - user: What brake fluids are suitable for motorcycles?
+    assertions:
+    - flow_started: faq
+- test_case: How to increase electric scooter range?
+  steps:
+  - user: How to increase electric scooter range?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose brake pads for an ATV?
+  steps:
+  - user: How to choose brake pads for an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: Which spark plugs are best for scooters?
+  steps:
+  - user: Which spark plugs are best for scooters?
+    assertions:
+    - flow_started: faq
+- test_case: How to maintain a motorcycle air filter?
+  steps:
+  - user: How to maintain a motorcycle air filter?
+    assertions:
+    - flow_started: faq
+- test_case: What are the age restrictions for ATVs?
+  steps:
+  - user: What are the age restrictions for ATVs?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix fuel leakage on a scooter?
+  steps:
+  - user: How to fix fuel leakage on a scooter?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose ATV load capacity?
+  steps:
+  - user: How to choose ATV load capacity?
+    assertions:
+    - flow_started: faq
+- test_case: What oils are suitable for ATVs?
+  steps:
+  - user: What oils are suitable for ATVs?
+    assertions:
+    - flow_started: faq
+- test_case: How to check motorcycle chain tension?
+  steps:
+  - user: How to check motorcycle chain tension?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase ATV off-road capability?
+  steps:
+  - user: What modifications increase ATV off-road capability?
+    assertions:
+    - flow_started: faq
+- test_case: What problems occur when using a 2T engine on a scooter?
+  steps:
+  - user: What problems occur when using a 2T engine on a scooter?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose forks for a motorcycle?
+  steps:
+  - user: How to choose forks for a motorcycle?
+    assertions:
+    - flow_started: faq
+- test_case: What tires are suitable for snow on an ATV?
+  steps:
+  - user: What tires are suitable for snow on an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: How to eliminate scooter wheel vibration?
+  steps:
+  - user: How to eliminate scooter wheel vibration?
+    assertions:
+    - flow_started: faq
+- test_case: What electronic systems are there on modern ATVs?
+  steps:
+  - user: What electronic systems are there on modern ATVs?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose a battery for a scooter?
+  steps:
+  - user: How to choose a battery for a scooter?
+    assertions:
+    - flow_started: faq
+- test_case: What are the weight restrictions for ATVs?
+  steps:
+  - user: What are the weight restrictions for ATVs?
+    assertions:
+    - flow_started: faq
+- test_case: How to eliminate engine noise on a scooter?
+  steps:
+  - user: How to eliminate engine noise on a scooter?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase ATV power?
+  steps:
+  - user: What modifications increase ATV power?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose brake discs for a motorcycle?
+  steps:
+  - user: How to choose brake discs for a motorcycle?
+    assertions:
+    - flow_started: faq
+- test_case: What problems occur when using 4WD on an ATV?
+  steps:
+  - user: What problems occur when using 4WD on an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix coolant leakage on a scooter?
+  steps:
+  - user: How to fix coolant leakage on a scooter?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase comfort on an ATV?
+  steps:
+  - user: What modifications increase comfort on an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose brake pads for a scooter?
+  steps:
+  - user: How to choose brake pads for a scooter?
+    assertions:
+    - flow_started: faq
+- test_case: What cooling systems are there on ATVs?
+  steps:
+  - user: What cooling systems are there on ATVs?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix variator malfunction on a scooter?
+  steps:
+  - user: How to fix variator malfunction on a scooter?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications improve ATV style?
+  steps:
+  - user: What modifications improve ATV style?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose motorcycle insurance?
+  steps:
+  - user: How to choose motorcycle insurance?
+    assertions:
+    - flow_started: faq
+- test_case: What problems occur when using an electric scooter in the rain?
+  steps:
+  - user: What problems occur when using an electric scooter in the rain?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase scooter off-road capability?
+  steps:
+  - user: What modifications increase scooter off-road capability?
+    assertions:
+    - flow_started: faq
+- test_case: How to eliminate handlebar vibration on an ATV?
+  steps:
+  - user: How to eliminate handlebar vibration on an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: What navigation systems are suitable for ATVs?
+  steps:
+  - user: What navigation systems are suitable for ATVs?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose tires for a scooter?
+  steps:
+  - user: How to choose tires for a scooter?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase ATV safety?
+  steps:
+  - user: What modifications increase ATV safety?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix battery malfunction on a motorcycle?
+  steps:
+  - user: How to fix battery malfunction on a motorcycle?
+    assertions:
+    - flow_started: faq
+- test_case: What problems occur when using mobile scooters?
+  steps:
+  - user: What problems occur when using mobile scooters?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose a motocross tire for an ATV?
+  steps:
+  - user: How to choose a motocross tire for an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications improve scooter handling?
+  steps:
+  - user: What modifications improve scooter handling?
+    assertions:
+    - flow_started: faq
+- test_case: What cooling systems are there on electric scooters?
+  steps:
+  - user: What cooling systems are there on electric scooters?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix oil leakage on an ATV?
+  steps:
+  - user: How to fix oil leakage on an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: What problems occur when using a scooter in extreme temperatures?
+  steps:
+  - user: What problems occur when using a scooter in extreme temperatures?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase scooter load capacity?
+  steps:
+  - user: What modifications increase scooter load capacity?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose brake discs for an ATV?
+  steps:
+  - user: How to choose brake discs for an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: What navigation systems are suitable for scooters?
+  steps:
+  - user: What navigation systems are suitable for scooters?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix ABS malfunction on a motorcycle?
+  steps:
+  - user: How to fix ABS malfunction on a motorcycle?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase ATV visibility?
+  steps:
+  - user: What modifications increase ATV visibility?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose forks for a scooter?
+  steps:
+  - user: How to choose forks for a scooter?
+    assertions:
+    - flow_started: faq
+- test_case: What safety systems are there on modern scooters?
+  steps:
+  - user: What safety systems are there on modern scooters?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix variator malfunction on an ATV?
+  steps:
+  - user: How to fix variator malfunction on an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase comfort on a scooter?
+  steps:
+  - user: What modifications increase comfort on a scooter?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose brake pads for an ATV?
+  steps:
+  - user: How to choose brake pads for an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: What problems occur when using a scooter in mountainous areas?
+  steps:
+  - user: What problems occur when using a scooter in mountainous areas?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix engine malfunction on an ATV?
+  steps:
+  - user: How to fix engine malfunction on an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase scooter safety?
+  steps:
+  - user: What modifications increase scooter safety?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose brake discs for a scooter?
+  steps:
+  - user: How to choose brake discs for a scooter?
+    assertions:
+    - flow_started: faq
+- test_case: What cooling systems are there on ATVs?
+  steps:
+  - user: What cooling systems are there on ATVs?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix battery malfunction on an ATV?
+  steps:
+  - user: How to fix battery malfunction on an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: What problems occur when using an electric scooter in mountains?
+  steps:
+  - user: What problems occur when using an electric scooter in mountains?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose tires for an ATV?
+  steps:
+  - user: How to choose tires for an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: What modifications increase ATV load capacity?
+  steps:
+  - user: What modifications increase ATV load capacity?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix variator malfunction on an ATV?
+  steps:
+  - user: How to fix variator malfunction on an ATV?
+    assertions:
+    - flow_started: faq
+- test_case: What problems occur when using a scooter in sandy areas?
+  steps:
+  - user: What problems occur when using a scooter in sandy areas?
+    assertions:
+    - flow_started: faq
+- test_case: How to choose brake pads for a motorcycle?
+  steps:
+  - user: How to choose brake pads for a motorcycle?
+    assertions:
+    - flow_started: faq
+- test_case: What navigation systems are suitable for ATVs?
+  steps:
+  - user: What navigation systems are suitable for ATVs?
+    assertions:
+    - flow_started: faq
+- test_case: How to fix ABS malfunction on an ATV?
+  steps:
+  - user: How to fix ABS malfunction on an ATV?
+    assertions:
+    - flow_started: faq

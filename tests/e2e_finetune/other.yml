@@ -1,0 +1,271 @@
+test_cases:
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Can you suggest some high-quality motorcycle gloves?
+  test_case: 'OTHER SEARCH: Can you suggest some high-quality motorcycle gloves?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What's a good helmet brand for touring?
+  test_case: 'OTHER SEARCH: What''s a good helmet brand for touring?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I find the best motorcycle lifts?
+  test_case: 'OTHER SEARCH: Where can I find the best motorcycle lifts?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Suggest some durable motorcycle covers.
+  test_case: 'OTHER SEARCH: Suggest some durable motorcycle covers.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the top-rated motorcycle boots?
+  test_case: 'OTHER SEARCH: What are the top-rated motorcycle boots?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I get custom motorcycle decals?
+  test_case: 'OTHER SEARCH: Where can I get custom motorcycle decals?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Recommend some anti-theft systems for bikes.
+  test_case: 'OTHER SEARCH: Recommend some anti-theft systems for bikes.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the best leather jackets for bikers?
+  test_case: 'OTHER SEARCH: What are the best leather jackets for bikers?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I find a reliable bike garage near me?
+  test_case: 'OTHER SEARCH: Where can I find a reliable bike garage near me?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Suggest a good brand for motorcycle saddlebags.
+  test_case: 'OTHER SEARCH: Suggest a good brand for motorcycle saddlebags.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are some top-rated motorcycle alarms?
+  test_case: 'OTHER SEARCH: What are some top-rated motorcycle alarms?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I buy a high-performance exhaust for my bike?
+  test_case: 'OTHER SEARCH: Where can I buy a high-performance exhaust for my bike?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Recommend some reliable motorcycle repair shops.
+  test_case: 'OTHER SEARCH: Recommend some reliable motorcycle repair shops.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the best knee protectors for motorcycling?
+  test_case: 'OTHER SEARCH: What are the best knee protectors for motorcycling?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I get a custom paint job for my motorcycle?
+  test_case: 'OTHER SEARCH: Where can I get a custom paint job for my motorcycle?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Suggest some effective motorcycle cleaning products.
+  test_case: 'OTHER SEARCH: Suggest some effective motorcycle cleaning products.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the best earplugs for bikers?
+  test_case: 'OTHER SEARCH: What are the best earplugs for bikers?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I find a good bike GPS system?
+  test_case: 'OTHER SEARCH: Where can I find a good bike GPS system?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Recommend some quality motorcycle maintenance kits.
+  test_case: 'OTHER SEARCH: Recommend some quality motorcycle maintenance kits.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the top brands for motorcycle intercom systems?
+  test_case: 'OTHER SEARCH: What are the top brands for motorcycle intercom systems?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I buy motorcycle tire repair kits?
+  test_case: 'OTHER SEARCH: Where can I buy motorcycle tire repair kits?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Suggest some bike-friendly hotels in Barcelona.
+  test_case: 'OTHER SEARCH: Suggest some bike-friendly hotels in Barcelona.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the best chain locks for motorcycles?
+  test_case: 'OTHER SEARCH: What are the best chain locks for motorcycles?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I find a motorcycle-friendly cafe in my area?
+  test_case: 'OTHER SEARCH: Where can I find a motorcycle-friendly cafe in my area?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Recommend some stylish motorcycle vests.
+  test_case: 'OTHER SEARCH: Recommend some stylish motorcycle vests.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the best motorcycle gloves for winter riding?
+  test_case: 'OTHER SEARCH: What are the best motorcycle gloves for winter riding?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I buy motorcycle-specific sunglasses?
+  test_case: 'OTHER SEARCH: Where can I buy motorcycle-specific sunglasses?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Suggest some top-rated motorcycle cleaning services.
+  test_case: 'OTHER SEARCH: Suggest some top-rated motorcycle cleaning services.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the best backpacks for bikers?
+  test_case: 'OTHER SEARCH: What are the best backpacks for bikers?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I find a good motorcycle seat cushion?
+  test_case: 'OTHER SEARCH: Where can I find a good motorcycle seat cushion?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Recommend some top-rated motorcycle navigation apps.
+  test_case: 'OTHER SEARCH: Recommend some top-rated motorcycle navigation apps.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the top brands for motorcycle batteries?
+  test_case: 'OTHER SEARCH: What are the top brands for motorcycle batteries?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I buy bike-friendly camping gear?
+  test_case: 'OTHER SEARCH: Where can I buy bike-friendly camping gear?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Suggest some high-quality motorcycle rain gear.
+  test_case: 'OTHER SEARCH: Suggest some high-quality motorcycle rain gear.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the best motorcycle crash bars?
+  test_case: 'OTHER SEARCH: What are the best motorcycle crash bars?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I find a motorcycle-friendly road trip planner?
+  test_case: 'OTHER SEARCH: Where can I find a motorcycle-friendly road trip planner?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Recommend some reliable motorcycle towing services.
+  test_case: 'OTHER SEARCH: Recommend some reliable motorcycle towing services.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the top-rated motorcycle tail bags?
+  test_case: 'OTHER SEARCH: What are the top-rated motorcycle tail bags?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I get motorcycle riding lessons?
+  test_case: 'OTHER SEARCH: Where can I get motorcycle riding lessons?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Suggest some protective motorcycle riding jeans.
+  test_case: 'OTHER SEARCH: Suggest some protective motorcycle riding jeans.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the best motorcycle phone mounts?
+  test_case: 'OTHER SEARCH: What are the best motorcycle phone mounts?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I buy motorcycle-specific first aid kits?
+  test_case: 'OTHER SEARCH: Where can I buy motorcycle-specific first aid kits?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Recommend some motorcycle-friendly routes in Italy.
+  test_case: 'OTHER SEARCH: Recommend some motorcycle-friendly routes in Italy.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the best microfiber cloths for bike cleaning?
+  test_case: 'OTHER SEARCH: What are the best microfiber cloths for bike cleaning?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I find motorcycle-themed restaurants?
+  test_case: 'OTHER SEARCH: Where can I find motorcycle-themed restaurants?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Suggest some high-performance motorcycle tires.
+  test_case: 'OTHER SEARCH: Suggest some high-performance motorcycle tires.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the top-rated motorcycle covers for winter?
+  test_case: 'OTHER SEARCH: What are the top-rated motorcycle covers for winter?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I buy motorcycle handlebar grips?
+  test_case: 'OTHER SEARCH: Where can I buy motorcycle handlebar grips?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Recommend some waterproof motorcycle boots.
+  test_case: 'OTHER SEARCH: Recommend some waterproof motorcycle boots.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the best motorcycle safety vests?
+  test_case: 'OTHER SEARCH: What are the best motorcycle safety vests?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I find a good motorcycle chain cleaner?
+  test_case: 'OTHER SEARCH: Where can I find a good motorcycle chain cleaner?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Suggest some durable motorcycle gear for beginners.
+  test_case: 'OTHER SEARCH: Suggest some durable motorcycle gear for beginners.'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: What are the top brands for motorcycle brakes?
+  test_case: 'OTHER SEARCH: What are the top brands for motorcycle brakes?'
+- steps:
+  - assertions:
+    - flow_started: other_search
+    user: Where can I get a custom motorcycle seat made?
+  test_case: 'OTHER SEARCH: Where can I get a custom motorcycle seat made?'

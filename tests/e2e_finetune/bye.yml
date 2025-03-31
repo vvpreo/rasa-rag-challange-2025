@@ -1,0 +1,281 @@
+test_cases:
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Goodbye!
+  test_case: 'BYE: Goodbye!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Farewell!
+  test_case: 'BYE: Farewell!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: See you later.
+  test_case: 'BYE: See you later.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Take care!
+  test_case: 'BYE: Take care!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Bye for now.
+  test_case: 'BYE: Bye for now.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Catch you later!
+  test_case: 'BYE: Catch you later!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Until next time.
+  test_case: 'BYE: Until next time.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm off now.
+  test_case: 'BYE: I''m off now.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Have a good one!
+  test_case: 'BYE: Have a good one!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Later!
+  test_case: 'BYE: Later!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm out.
+  test_case: 'BYE: I''m out.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Peace out!
+  test_case: 'BYE: Peace out!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Adios!
+  test_case: 'BYE: Adios!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: So long!
+  test_case: 'BYE: So long!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: See you around.
+  test_case: 'BYE: See you around.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm heading out.
+  test_case: 'BYE: I''m heading out.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Ciao!
+  test_case: 'BYE: Ciao!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Bye-bye!
+  test_case: 'BYE: Bye-bye!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm leaving now.
+  test_case: 'BYE: I''m leaving now.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: See you soon!
+  test_case: 'BYE: See you soon!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Gotta go!
+  test_case: 'BYE: Gotta go!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm signing off.
+  test_case: 'BYE: I''m signing off.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Catch you on the flip side!
+  test_case: 'BYE: Catch you on the flip side!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Goodbye for now.
+  test_case: 'BYE: Goodbye for now.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Talk to you later!
+  test_case: 'BYE: Talk to you later!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm done here.
+  test_case: 'BYE: I''m done here.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Later, alligator!
+  test_case: 'BYE: Later, alligator!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Time to go.
+  test_case: 'BYE: Time to go.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: See you in a bit.
+  test_case: 'BYE: See you in a bit.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm off to another adventure!
+  test_case: 'BYE: I''m off to another adventure!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm outta here!
+  test_case: 'BYE: I''m outta here!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Cheerio!
+  test_case: 'BYE: Cheerio!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I have to go now.
+  test_case: 'BYE: I have to go now.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Bye, take care!
+  test_case: 'BYE: Bye, take care!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: See you next time!
+  test_case: 'BYE: See you next time!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I must be going.
+  test_case: 'BYE: I must be going.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm saying goodbye now.
+  test_case: 'BYE: I''m saying goodbye now.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: It's time to say goodbye.
+  test_case: 'BYE: It''s time to say goodbye.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Off I go!
+  test_case: 'BYE: Off I go!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: See you when I see you.
+  test_case: 'BYE: See you when I see you.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Ta-ta!
+  test_case: 'BYE: Ta-ta!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I shall take my leave.
+  test_case: 'BYE: I shall take my leave.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I bid you farewell.
+  test_case: 'BYE: I bid you farewell.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm wrapping up now.
+  test_case: 'BYE: I''m wrapping up now.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: It's time to part ways.
+  test_case: 'BYE: It''s time to part ways.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Goodbye, my friend!
+  test_case: 'BYE: Goodbye, my friend!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I must depart.
+  test_case: 'BYE: I must depart.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm ending this conversation.
+  test_case: 'BYE: I''m ending this conversation.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Over and out!
+  test_case: 'BYE: Over and out!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm clocking out now.
+  test_case: 'BYE: I''m clocking out now.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Until we meet again!
+  test_case: 'BYE: Until we meet again!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: Parting is such sweet sorrow.
+  test_case: 'BYE: Parting is such sweet sorrow.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I wish you well!
+  test_case: 'BYE: I wish you well!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: It's time for me to leave.
+  test_case: 'BYE: It''s time for me to leave.'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: See ya!
+  test_case: 'BYE: See ya!'
+- steps:
+  - assertions:
+    - flow_started: good_bye_user
+    user: I'm off to do other things.
+  test_case: 'BYE: I''m off to do other things.'

@@ -1,0 +1,151 @@
+test_cases:
+- test_case: Can you assist me with a particular model?
+  steps:
+  - user: Can you assist me with a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I'm looking for information on a certain model.
+  steps:
+  - user: I'm looking for information on a certain model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Could you provide details about a specific vehicle model?
+  steps:
+  - user: Could you provide details about a specific vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I need help with a particular car model.
+  steps:
+  - user: I need help with a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Can you find information on a specific model for me?
+  steps:
+  - user: Can you find information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Can you search for a specific car model?
+  steps:
+  - user: Can you search for a specific car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I would like to learn more about a certain vehicle model.
+  steps:
+  - user: I would like to learn more about a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Can you guide me on a particular model?
+  steps:
+  - user: Can you guide me on a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I'm interested in details about a specific model.
+  steps:
+  - user: I'm interested in details about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Help me find information on a specific model.
+  steps:
+  - user: Help me find information on a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Could you assist me with information on a particular model?
+  steps:
+  - user: Could you assist me with information on a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I'm looking for details on a specific car model.
+  steps:
+  - user: I'm looking for details on a specific car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Can you help me with a certain vehicle model?
+  steps:
+  - user: Can you help me with a certain vehicle model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Please assist me in finding information about a specific model.
+  steps:
+  - user: Please assist me in finding information about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Could you provide information on a particular car model?
+  steps:
+  - user: Could you provide information on a particular car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I need details on a specific vehicle model.
+  steps:
+  - user: I need details on a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Can you give me information about a specific model?
+  steps:
+  - user: Can you give me information about a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Help me get information on a particular model.
+  steps:
+  - user: Help me get information on a particular model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I'm searching for information regarding a specific model.
+  steps:
+  - user: I'm searching for information regarding a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Could you help me locate details about a certain model?
+  steps:
+  - user: Could you help me locate details about a certain model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Can you provide me with details on a specific model?
+  steps:
+  - user: Can you provide me with details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I want to know more about a particular car model.
+  steps:
+  - user: I want to know more about a particular car model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Can you look up information on a specific model for me?
+  steps:
+  - user: Can you look up information on a specific model for me?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I require information on a certain vehicle model.
+  steps:
+  - user: I require information on a certain vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Could you help me find details on a specific model?
+  steps:
+  - user: Could you help me find details on a specific model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Please provide information on a particular vehicle model.
+  steps:
+  - user: Please provide information on a particular vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I need to know about a specific model.
+  steps:
+  - user: I need to know about a specific model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Can you assist me in finding details about a certain car model?
+  steps:
+  - user: Can you assist me in finding details about a certain car model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: I'd like help with a specific vehicle model.
+  steps:
+  - user: I'd like help with a specific vehicle model.
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+- test_case: Can you offer information on a particular model?
+  steps:
+  - user: Can you offer information on a particular model?
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
