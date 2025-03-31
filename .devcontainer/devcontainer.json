@@ -19,5 +19,5 @@
       ]
     }
   },
-  "postCreateCommand": "uv venv .env && source scripts/000_prepare_setup.sh || echo 'unable to source scripts/000_prepare_setup.sh'"
+  "postCreateCommand": "uv venv .env && uv pip install -r requirements.txt && rasa train && rasa shell"
 }

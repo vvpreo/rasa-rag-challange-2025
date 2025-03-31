@@ -173,8 +173,6 @@ responses:
         Unfortunately, sometimes, I am not as smart as my moto expert colleague.
         I'm kindly asking you to be more precise and enter your adjustments like this:
         name: <your name>
-        gender: male/female
-        age: <your age>
         email: <your email>
   
   
