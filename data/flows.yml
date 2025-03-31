@@ -1,0 +1,248 @@
+flows:
+
+  obtain_user_data:
+    if: false
+    name: "Obtain user's data"
+    description: |
+      Here you're pretending to be AI ADMIN, that overtakes control to direct user through this flow.
+      You behave in respectful and strict manner, letting user understand importance in inevitability of given procedure.
+      Your goal is to obtain user's personal data.
+#    persisted_slots: [ user_name, user_email, user_gender, user_age, user_confirmed_personal_data ]
+    steps:
+      - id: obtain_info
+        collect: user_name
+        utter: utter_clarify_reasons_for_obtaining_personal_data
+        description: 'Name of the user. @RA@ Capitalize name slot if needed.'
+        reset_after_flow_ends: false
+        next: user_gender
+
+      - id: user_gender
+        collect: user_gender
+        utter: utter_obtain__user_gender
+        description: 'Gender of the user. @RA@ Try to infer gender from name if it is obvious.'
+        reset_after_flow_ends: false
+        next: user_age
+
+      - id: user_age
+        collect: user_age
+        utter: utter_obtain__user_age
+        description: 'Age of the user. @RA@ If user provides year of birth - keep asking for age.'
+        reset_after_flow_ends: false
+        next: user_email
+
+      - id: user_email
+        collect: user_email
+        utter: utter_obtain__user_email
+        description: 'E-mail of the user. @RA@ e-mail MUST be PROVIDED in a form of `<alphanum|.>@<alphanum>.<alphanum>`.'
+        reset_after_flow_ends: false
+        next: reset_confirm
+
+      - id: reset_confirm
+        set_slots: [ user_confirmed_personal_data: false ]
+        next: confirm
+
+      - id: confirm
+        collect: user_confirmed_personal_data
+        utter: utter_confirm_entered_data
+        ask_before_filling: true
+        reset_after_flow_ends: false
+        next:
+          - if: slots.user_confirmed_personal_data
+            then: thank_and_continue
+          - else:
+              - set_slots:
+                  - user_name: null
+                  - user_age: null
+                  - user_gender: null
+                  - user_email: null
+                next: obtain_info
+
+      - id: thank_and_continue
+        action: utter_thank_for_entering_data
+
+      - action: utter_moto_assistant_is_back
+
+
+
+  faq:
+    name: "FAQ section"
+    description: |
+      Call `faq` flow to respond all user's queries that look like a general question. Examples:
+      - USER: How to choose a motorcycle for beginners?
+      - USER: How to adjust ATV suspension for different terrain types?
+      - USER: What problems occur when using an electric scooter in the rain?
+      - USER: What navigation systems are suitable for ATVs?
+      FAQ db contains questions on topics: comfort, components, customization, documentation, electric, maintenance, navigation, off_road, performance, safety, seasonal, storage, technical, troubleshooting, vehicle_selection
+    steps:
+      - action: action_requests_count_increment
+      - action: action_trigger_search_faq_capture_request
+      - noop: true
+        next:
+          - if: slots.user_confirmed_personal_data or (slots.requests_count < 2)
+            then: need_time
+          - else: to_user_data
+
+      - id: to_user_data
+        call: obtain_user_data
+
+      - id: need_time
+        action: utter_need_time
+        next: run_faq
+
+      - id: run_faq
+        action: action_trigger_search_faq
+
+  vehicles_search_by_make_and_model:
+    name: "Vehicle search by model"
+    description: |
+      Call 'vehicles_search_by_make_or_model' flow if:
+      - User asks to search info about particular make and/or model. Examples:
+        - USER: How many HP has Yamaha R1?
+        - USER: What is the seat height for AJP SPR 240X Enduro?
+        - USER: Help me with specific model
+        - USER: <Manufacturer> <model name>
+        - USER: <model name> <Manufacturer>
+    steps:
+      - action: action_requests_count_increment
+      - noop: true
+        next:
+          - if: slots.user_confirmed_personal_data or (slots.requests_count < 2)
+            then: get_make
+          - else: to_user_data
+
+      - id: to_user_data
+        call: obtain_user_data
+
+      - id: get_make
+        description: |
+          Get the name of the manufacturer.
+          @RA@ Most common case is when user define <manufacturer> <model>. Try to infer model if possible. If not sure don't do it. Examples:
+          - USER: Yamaha R1. user_search_specs_make=Yamaha, user_search_specs_model=R1
+          - USER: Yamaha Einfield. Both are manufacturers - do not set any slots.
+          - USER: Yamaha YFZ 450. user_search_specs_make=Yamaha, user_search_specs_model=YFZ 450
+        collect: user_search_specs_make
+        utter: utter_collect_user_search_specs_make
+        next: get_model
+
+      - id: get_model
+        description: Get the name of the model from the list provided to user.
+        collect: user_search_specs_model
+        utter: utter_collect_user_search_specs_model
+        next: run_search_db
+
+      - id: run_search_db
+        action: action_vehicles_search_by_make_and_model_basic
+        next: get_specific_request
+
+      - id: get_specific_request
+        description: |
+          @RA@ ANY input from user MUST be considered as a user's request for further processing except clear `no`.
+          If user sais no - ask if there any additional assistance needed.
+          @RA@ Before you switch to another flow, Try to understand user's request in the context of the current flow. If a user asks for a price or any other specific information in THIS particlar step. go ahead, let him do it.
+        collect: user_search_specific_request
+        utter: utter_collect_user_user_search_specific_request
+        ask_before_filling: true
+        next: need_time
+
+      - id: need_time
+        action: utter_need_time
+        next: run_search_internet
+
+      - id: run_search_internet
+        action: action_vehicles_search_by_make_and_model_internet
+
+  other_search:
+    name: "Other search"
+    description: |
+      Call 'other_search' flow if:
+      - @RA@ User is asking to recommend particular brands or something else.
+      - User's intent looks like a search for moto accessories/equipment/other. Examples:
+        - I need top 3 navigation systems for ATVs
+        - Where I can tune my bike?
+        - What shocks are suitable for Aprilia Tuareg 660?
+        - Recommend me 3 driving schools in Madrid.
+        - What are the best motorcycle gloves for winter riding?
+        - Where can I find a motorcycle-friendly road trip planner?
+        - What are the top-rated motorcycle covers for winter?
+        - What are the best motorcycle safety vests?
+        - What are the best motorcycle mirrors for visibility?
+        - Where can I find motorcycle-specific insurance?
+        - What are the best motorcycle horn upgrades?
+        - Where can I find a motorcycle repair manual?
+        - What are the best motorcycle rain covers?
+        - What are the best motorcycle ramp options?
+        - Recommend some comfortable motorcycle seats.
+        - What are the best motorcycle tail light upgrades?
+        - Suggest some effective motorcycle anti-fog solutions.
+    if: slots.user_confirmed_personal_data or slots.requests_count <= 3
+    steps:
+      - action: action_requests_count_increment
+      - noop: true
+        next:
+          - if: slots.user_confirmed_personal_data or (slots.requests_count < 2)
+            then: need_time
+          - else: to_user_data
+
+      - id: to_user_data
+        call: obtain_user_data
+
+      - id: need_time
+        action: utter_need_time
+        next: run_search_internet
+
+      - id: run_search_internet
+        action: action_trigger_search_other
+
+
+
+  good_bye_user:
+    name: "Say good bye to user"
+    description: |
+      Call flow `good_bye_user` if user intents to finish conversation. Examples:
+      - Cheerio
+      - Пока
+      - Adios
+      - Ciao
+      - Keep in touch
+      - I wish you well
+      - I'm ready to go
+      - Have a good one!
+      - I'm off to another adventure!
+      - Exit stage left!
+    steps:
+      - noop: true
+        next:
+          - if: slots.user_confirmed_personal_data
+            then: personal
+          - else: general
+
+      - id: personal
+        action: utter_say_good_bye_personal
+        next: done
+
+      - id: general
+        action: utter_say_good_bye_general
+        next: done
+
+      - id: done
+        action: action_session_end
+
+
+  ########################################################################################################################
+  #### PATTERNS ####
+  ########################################################################################################################
+
+  pattern_search:
+    description: Requests for knowledge retrieval requests.
+    steps:
+      - id: to_faq
+        link: faq
+
+  pattern_cannot_handle:
+    description: Forwards to search.
+    steps: [ action: utter_chitchat ]
+
+  pattern_chitchat:
+    description: handle interactions with the user that are not task-oriented
+    steps: [ action: utter_chitchat ]
+

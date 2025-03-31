@@ -1,0 +1,9 @@
+rules:
+  - rule: Redirect to good_bye flow when user says bye
+    steps:
+      - intent: goodbye
+      - action: good_bye_flow
+  - rule: If it is not possible to identify intent
+    steps:
+      - intent: unknown
+      - action: obtain_user_data

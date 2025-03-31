@@ -1,0 +1,11 @@
+============================================================================================== short test summary info ==============================================================================================
+FAILED /Users/vvpreo/code/vvpreo/vvpreo-rasa-rag-challange-2025/tests/e2e/other_search/other_search__other_search__variations.yml::OTHER SEARCH: What are the top brands for motorcycle batteries?
+FAILED /Users/vvpreo/code/vvpreo/vvpreo-rasa-rag-challange-2025/tests/e2e/other_search/other_search__other_search__variations.yml::OTHER SEARCH: What are the top brands for motorcycle brakes?
+FAILED /Users/vvpreo/code/vvpreo/vvpreo-rasa-rag-challange-2025/tests/e2e/other_search/other_search__other_search__variations.yml::OTHER SEARCH: What are the best motorcycle mirrors for visibility?
+FAILED /Users/vvpreo/code/vvpreo/vvpreo-rasa-rag-challange-2025/tests/e2e/other_search/other_search__other_search__variations.yml::OTHER SEARCH: Where can I find motorcycle-specific insurance?
+FAILED /Users/vvpreo/code/vvpreo/vvpreo-rasa-rag-challange-2025/tests/e2e/other_search/other_search__other_search__variations.yml::OTHER SEARCH: What are the top brands for motorcycle chains?
+FAILED /Users/vvpreo/code/vvpreo/vvpreo-rasa-rag-challange-2025/tests/e2e/other_search/other_search__other_search__variations.yml::OTHER SEARCH: Where can I find a motorcycle repair manual?
+FAILED /Users/vvpreo/code/vvpreo/vvpreo-rasa-rag-challange-2025/tests/e2e/other_search/other_search__other_search__variations.yml::OTHER SEARCH: What are the best motorcycle ramp options?
+FAILED /Users/vvpreo/code/vvpreo/vvpreo-rasa-rag-challange-2025/tests/e2e/other_search/other_search__other_search__variations.yml::OTHER SEARCH: What are the top brands for motorcycle brake fluids?
+FAILED /Users/vvpreo/code/vvpreo/vvpreo-rasa-rag-challange-2025/tests/e2e/other_search/other_search__other_search__variations.yml::OTHER SEARCH: Suggest some effective motorcycle anti-fog solutions.
+============================================================================================ 9 failed, 100 passed

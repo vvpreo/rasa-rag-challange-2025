@@ -1,0 +1,121 @@
+test_cases:
+- test_case: ' Kawasaki KX450X'
+  steps:
+  - user: Kawasaki KX450X
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: KX450X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: KX450X
+  - user: Could you find the production locations?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find the production locations?
+- test_case: Give me the scoop on Kawasaki KX450X
+  steps:
+  - user: Give me the scoop on Kawasaki KX450X
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: KX450X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: KX450X
+  - user: What is the braking system like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the braking system like?
+- test_case: Share some info about Kawasaki Vulcan 1700 Vaquero ABS
+  steps:
+  - user: Share some info about Kawasaki Vulcan 1700 Vaquero ABS
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Vulcan 1700 Vaquero ABS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Vulcan 1700 Vaquero ABS
+  - user: Can you tell me the manufacturing materials?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the manufacturing materials?
+- test_case: Share some info about Kawasaki Vulcan 1700 Vaquero ABS
+  steps:
+  - user: Share some info about Kawasaki Vulcan 1700 Vaquero ABS
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Vulcan 1700 Vaquero ABS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Vulcan 1700 Vaquero ABS
+  - user: What is the mileage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the mileage?
+- test_case: Spill the beans about Kawasaki Ninja 650 Tourer
+  steps:
+  - user: Spill the beans about Kawasaki Ninja 650 Tourer
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Ninja 650 Tourer
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Ninja 650 Tourer
+  - user: What is the current market price?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the current market price?
+- test_case: What's the deal with Kawasaki Ninja 650 Tourer
+  steps:
+  - user: What's the deal with Kawasaki Ninja 650 Tourer
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Kawasaki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Kawasaki
+  - user: Ninja 650 Tourer
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Ninja 650 Tourer
+  - user: What is the warranty coverage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the warranty coverage?

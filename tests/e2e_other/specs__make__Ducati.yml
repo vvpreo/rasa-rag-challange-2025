@@ -1,0 +1,121 @@
+test_cases:
+- test_case: What's up with Ducati Multistrada V4
+  steps:
+  - user: What's up with Ducati Multistrada V4
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Multistrada V4
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Multistrada V4
+  - user: Can you find the awards received?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the awards received?
+- test_case: ' Ducati Multistrada V4'
+  steps:
+  - user: Ducati Multistrada V4
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Multistrada V4
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Multistrada V4
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: Any news on Ducati Monster Plus
+  steps:
+  - user: Any news on Ducati Monster Plus
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Monster Plus
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Monster Plus
+  - user: Do you have the infotainment features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the infotainment features?
+- test_case: What's the lowdown on Ducati Monster Plus
+  steps:
+  - user: What's the lowdown on Ducati Monster Plus
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Monster Plus
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Monster Plus
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: ' Ducati Multistrada V2 S'
+  steps:
+  - user: Ducati Multistrada V2 S
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Multistrada V2 S
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Multistrada V2 S
+  - user: What is the horsepower rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the horsepower rating?
+- test_case: ' Ducati Multistrada V2 S'
+  steps:
+  - user: Ducati Multistrada V2 S
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Ducati
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Ducati
+  - user: Multistrada V2 S
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Multistrada V2 S
+  - user: Do you know the key competitors?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the key competitors?

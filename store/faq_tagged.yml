@@ -1,0 +1,471 @@
+faq:
+- answer: For novices, it's better to choose motorcycles with 300-650cc engines, low
+    seat height, and automatic transmission (e.g., Honda CBR300R, Yamaha MT-03). Consider
+    weight, handling, and budget.
+  question: How to choose a motorcycle for beginners?
+  tags:
+  - vehicle_selection
+- answer: For dirt and sand, use tires with aggressive tread patterns (e.g., Maxxis
+    Bighorn). For soft trails, tires with deep treads (ITP Mud Lite) work well. For
+    asphalt, choose tires with smooth treads.
+  question: What tires are suitable for different surfaces on an ATV?
+  tags:
+  - components
+  - off_road
+- answer: Check battery charge, spark plug, and air filter condition. Clean the carburetor
+    and check the fuel filter. For electric scooters, ensure there's no wiring damage.
+  question: How to fix scooter starting problems?
+  tags:
+  - troubleshooting
+- answer: Avoid sharp turns at high speeds, distribute weight evenly, don't carry
+    passengers on single-seat models. Take safety training courses.
+  question: How to prevent ATV rollover?
+  tags:
+  - safety
+- answer: Change oil every 3,000-5,000 km or annually. Use oil that meets manufacturer
+    recommendations (e.g., Motul 5100 for scooters).
+  question: How often should motorcycle oil be changed?
+  tags:
+  - maintenance
+- answer: Store the battery at 50% charge, avoid full discharge. Use the original
+    charger and check wiring contacts.
+  question: What to do when an electric scooter battery discharges?
+  tags:
+  - electric
+  - troubleshooting
+- answer: Models with 125-300cc are optimal (e.g., Honda PCX, Suzuki Burgman). Consider
+    mileage, maintenance costs, and ABS availability.
+  question: How to choose a scooter for city rides?
+  tags:
+  - vehicle_selection
+- answer: For hard trails, increase spring tension. On loose surfaces, reduce shock
+    absorber pressure. Use adjustable forks (e.g., Polaris Sportsman).
+  question: How to adjust ATV suspension for different terrain types?
+  tags:
+  - performance
+  - off_road
+- answer: Lubricate the chain every 500-1000 km, clean dirt after rides. Adjust tension
+    when necessary. Replace every 20,000-30,000 km.
+  question: How to maintain a motorcycle chain?
+  tags:
+  - maintenance
+  - components
+- answer: In most countries, a category B driver's license (if ATV weight exceeds
+    400 kg) and insurance are required. Check local laws.
+  question: What documents are needed for driving an ATV?
+  tags:
+  - documentation
+- answer: Install a sports air filter, lightweight wheels, tune the carburetor. For
+    50cc models, Polini engines (e.g., Polini 70cc) are suitable.
+  question: What modifications improve scooter performance?
+  tags:
+  - performance
+- answer: Drain fuel, charge the battery to 100%, use anti-corrosion coatings. Store
+    in a dry place with temperature above 0°C.
+  question: How to winterize a motorcycle?
+  tags:
+  - storage
+- answer: Use helmets with DOT or ECE certification. For extreme rides, choose helmets
+    with cheek and neck protection (e.g., Shoei VFX-EVO).
+  question: How to choose an ATV helmet?
+  tags:
+  - safety
+- answer: Check wheel balance, variator belt tension, bearing wear. For 2T engine
+    models, replace the crankshaft.
+  question: How to eliminate scooter vibration at high speeds?
+  tags:
+  - troubleshooting
+  - components
+- answer: Use DOT 4 for sports models and DOT 3 for everyday use. Replace every 20,000-30,000
+    km or when color/viscosity changes.
+  question: What brake fluids are suitable for motorcycles?
+  tags:
+  - components
+- answer: Reduce speed, avoid sharp accelerations. Use energy-efficient tires and
+    regularly maintain the battery.
+  question: How to increase electric scooter range?
+  tags:
+  - electric
+  - performance
+  - maintenance
+- answer: For aggressive riding, choose metallic pads (e.g., EBC MX). For everyday
+    rides, organic materials (e.g., Braking BF).
+  question: How to choose brake pads for an ATV?
+  tags:
+  - components
+- answer: For 2T engines, NGK BR7HS is suitable. For 4T - NGK CR7E. Replace every
+    5,000-10,000 km.
+  question: Which spark plugs are best for scooters?
+  tags:
+  - components
+- answer: Wash every 2,000-5,000 km. For dry filters, use a vacuum cleaner and oil.
+    Replace every 15,000-20,000 km.
+  question: How to maintain a motorcycle air filter?
+  tags:
+  - maintenance
+- answer: In most countries, driving is allowed from 16 years old. For children under
+    16, safety courses and adult supervision are mandatory.
+  question: What are the age restrictions for ATVs?
+  tags:
+  - documentation
+- answer: Check carburetor gaskets, fuel pump condition, and hoses. Replace damaged
+    components with original parts.
+  question: How to fix fuel leakage on a scooter?
+  tags:
+  - troubleshooting
+- answer: For cargo transportation, consider the permissible load (usually 100-200
+    kg). For trailer towing, choose models with 4WD and reinforced frame.
+  question: How to choose ATV load capacity?
+  tags:
+  - vehicle_selection
+- answer: Use 10W-30 synthetic oils for 4T engines. For 2T mixtures, add oil in a
+    1:50 ratio (e.g., Motul 800 2T).
+  question: What oils are suitable for ATVs?
+  tags:
+  - maintenance
+- answer: Put the motorcycle on the center stand. Maximum sag should be 2-3 cm. Use
+    tensioner adjustment bolts.
+  question: How to check motorcycle chain tension?
+  tags:
+  - components
+- answer: Install lifts, larger wheels, protective covers. For swamp crossing - snorkels
+    and waterproof engine gaskets.
+  question: What modifications increase ATV off-road capability?
+  tags:
+  - performance
+  - off_road
+- answer: Low resource, need to mix oil with fuel. 4T engines are preferable for city
+    rides.
+  question: What problems occur when using a 2T engine on a scooter?
+  tags:
+  - troubleshooting
+  - technical
+- answer: For touring, forks with adjustment (e.g., WP Suspension) are suitable. For
+    track days - sports models (Öhlins).
+  question: How to choose forks for a motorcycle?
+  tags:
+  - components
+  - vehicle_selection
+- answer: Use studded tires or those with deep treads (e.g., ITP Ice Crusher). For
+    icy surfaces - chain protectors.
+  question: What tires are suitable for snow on an ATV?
+  tags:
+  - components
+  - seasonal
+- answer: Check wheel balance, hub bearing wear, variator belt tension. Use a dynamometer
+    for balancing.
+  question: How to eliminate scooter wheel vibration?
+  tags:
+  - troubleshooting
+  - components
+- answer: ABS, ECU, tire pressure sensors, differential lock systems. Consider these
+    when buying.
+  question: What electronic systems are there on modern ATVs?
+  tags:
+  - technical
+- answer: For 50cc models, AGM batteries (e.g., Yuasa YTX5L-BS) are suitable. For
+    electric scooters - lithium-ion (e.g., Kugoo).
+  question: How to choose a battery for a scooter?
+  tags:
+  - components
+  - electric
+- answer: Total weight (including driver and cargo) should not exceed the limit specified
+    by the manufacturer. For most models - 300-500 kg.
+  question: What are the weight restrictions for ATVs?
+  tags:
+  - technical
+- answer: Check piston group wear, chain tension, pulley condition. Replace worn components
+    with original ones.
+  question: How to eliminate engine noise on a scooter?
+  tags:
+  - troubleshooting
+- answer: Install sports exhaust, ECU chip tuning, forced crankshaft. For 4T engines
+    - valve timing adjustment.
+  question: What modifications increase ATV power?
+  tags:
+  - performance
+- answer: For city rides - steel discs. For track days - composite (e.g., Brembo P30).
+  question: How to choose brake discs for a motorcycle?
+  tags:
+  - components
+  - vehicle_selection
+- answer: Increased fuel consumption, difficulty in asphalt control. Use 4WD only
+    on difficult trails.
+  question: What problems occur when using 4WD on an ATV?
+  tags:
+  - troubleshooting
+  - off_road
+- answer: Check radiator gaskets, hose condition, water pump integrity. Replace damaged
+    components.
+  question: How to fix coolant leakage on a scooter?
+  tags:
+  - troubleshooting
+- answer: Install soft seats, windshields, luggage racks. For long trips - heating
+    systems.
+  question: What modifications increase comfort on an ATV?
+  tags:
+  - comfort
+- answer: For city rides - organic pads (e.g., Ferodo FDB). For sports models - metallic
+    (Brembo).
+  question: How to choose brake pads for a scooter?
+  tags:
+  - components
+  - vehicle_selection
+- answer: Air (for 2T engines) and liquid (for 4T). Check coolant level every 500
+    km.
+  question: What cooling systems are there on ATVs?
+  tags:
+  - technical
+- answer: Check roller wear, belt condition, tension. Replace worn components with
+    original ones.
+  question: How to fix variator malfunction on a scooter?
+  tags:
+  - troubleshooting
+- answer: Install LED lighting, sports aerography, lightweight wheels. For uniqueness
+    - custom exhaust systems.
+  question: What modifications improve ATV style?
+  tags:
+  - customization
+- answer: Choose full package (CASCO) for new models. For old motorcycles - mandatory
+    insurance (OSAGO). Consider insurance deductibles.
+  question: How to choose motorcycle insurance?
+  tags:
+  - documentation
+- answer: Increased risk of short circuit. Use waterproof covers, avoid deep puddles.
+    Dry electronic components after riding.
+  question: What problems occur when using an electric scooter in the rain?
+  tags:
+  - electric
+  - seasonal
+  - troubleshooting
+- answer: Install protective covers, reinforced shock absorbers, deep-tread tires
+    (e.g., Pirelli MT60R).
+  question: What modifications increase scooter off-road capability?
+  tags:
+  - customization
+  - off_road
+- answer: Check wheel balance, fork bearing wear, chain tension. Use a dynamometer
+    for balancing.
+  question: How to eliminate handlebar vibration on an ATV?
+  tags:
+  - troubleshooting
+- answer: Moisture-resistant devices (e.g., Garmin Montana). For track days - GPS
+    trackers with terrain maps.
+  question: What navigation systems are suitable for ATVs?
+  tags:
+  - navigation
+- answer: For city rides - low-resistance tires (e.g., Michelin City Grip). For track
+    days - sports tires (Pirelli Diablo).
+  question: How to choose tires for a scooter?
+  tags:
+  - components
+  - vehicle_selection
+- answer: Install roll bar, protective leg panels, emergency engine shutdown systems.
+    Use seat belts.
+  question: What modifications increase ATV safety?
+  tags:
+  - safety
+  - customization
+- answer: Check charge, electrolyte density, plate integrity. For AGM batteries -
+    charge in desulfation mode.
+  question: How to fix battery malfunction on a motorcycle?
+  tags:
+  - troubleshooting
+- answer: Power reduction at full load, quick battery discharge. Use models with 500-800W
+    motors (e.g., Pride Raptor).
+  question: What problems occur when using mobile scooters?
+  tags:
+  - troubleshooting
+  - electric
+- answer: For motocross, soft rubber tires (e.g., Dunlop Geomax MX33) are suitable.
+    For enduro - tires with reinforced side profile.
+  question: How to choose a motocross tire for an ATV?
+  tags:
+  - vehicle_selection
+  - components
+- answer: Install sports shock absorbers, lightweight wheels, adjustable steering
+    levers. For city rides - wide tires.
+  question: What modifications improve scooter handling?
+  tags:
+  - performance
+- answer: Air (for motors up to 500W) and liquid (for powerful models). Check antifreeze
+    level every 1,000 km.
+  question: What cooling systems are there on electric scooters?
+  tags:
+  - electric
+  - technical
+- answer: Check valve cover gaskets, oil filter condition, crankshaft seal integrity.
+    Replace damaged components.
+  question: How to fix oil leakage on an ATV?
+  tags:
+  - troubleshooting
+- answer: For cold climates - change oil to winter grade (e.g., 0W-20). For heat -
+    use coolants with anti-foam additives.
+  question: What problems occur when using a scooter in extreme temperatures?
+  tags:
+  - seasonal
+  - troubleshooting
+- answer: Install reinforced frames, cargo platforms, cargo trailers. For 50cc models
+    - limit load to 50 kg.
+  question: What modifications increase scooter load capacity?
+  tags:
+  - performance
+  - customization
+- answer: For extreme rides - composite discs (e.g., Braking S3). For everyday rides
+    - steel discs.
+  question: How to choose brake discs for an ATV?
+  tags:
+  - components
+  - vehicle_selection
+- answer: Rain-resistant devices (e.g., Garmin Zumo XT). For city rides - waterproof
+    smartphone holders.
+  question: What navigation systems are suitable for scooters?
+  tags:
+  - navigation
+- answer: Check speed sensors, wiring integrity, brake fluid level. Reset errors using
+    a diagnostic scanner.
+  question: How to fix ABS malfunction on a motorcycle?
+  tags:
+  - troubleshooting
+- answer: Install LED lighting, reflectors, signal beacons. For night rides - high-brightness
+    spotlights.
+  question: What modifications increase ATV visibility?
+  tags:
+  - customization
+  - safety
+- answer: For city rides - standard forks. For track days - sports (e.g., WP Suspension).
+    Consider ground clearance.
+  question: How to choose forks for a scooter?
+  tags:
+  - components
+  - vehicle_selection
+- answer: ABS, traction control, automatic engine shutdown systems in case of falling.
+    Consider these when buying.
+  question: What safety systems are there on modern scooters?
+  tags:
+  - safety
+- answer: Check roller wear, belt condition, tension. Replace worn components with
+    original ones.
+  question: How to fix variator malfunction on an ATV?
+  tags:
+  - troubleshooting
+- answer: Install soft seats, windshields, adjustable steering levers. For long trips
+    - heating systems.
+  question: What modifications increase comfort on a scooter?
+  tags:
+  - comfort
+  - customization
+- answer: For aggressive riding - metallic pads (e.g., EBC MX). Everyday rides - organic
+    materials.
+  question: How to choose brake pads for an ATV?
+  tags:
+  - components
+  - vehicle_selection
+- answer: Power reduction due to altitude. Use engines with higher capacity (e.g.,
+    300-400cc) and adjust the air filter.
+  question: What problems occur when using a scooter in mountainous areas?
+  tags:
+  - technical
+  - off_road
+  - troubleshooting
+- answer: Check compression, piston group wear, oil level. For 2T engines - oil and
+    fuel ratio.
+  question: How to fix engine malfunction on an ATV?
+  tags:
+  - troubleshooting
+- answer: Install roll bar, protective leg panels, emergency engine shutdown systems.
+    Use seat belts.
+  question: What modifications increase scooter safety?
+  tags:
+  - safety
+  - customization
+- answer: For city rides - steel discs. For track days - composite (e.g., Brembo P30).
+  question: How to choose brake discs for a scooter?
+  tags:
+  - components
+  - vehicle_selection
+- answer: Air (for 2T engines) and liquid (for 4T). Check coolant level every 500
+    km.
+  question: What cooling systems are there on ATVs?
+  tags:
+  - technical
+- answer: Check charge, electrolyte density, plate integrity. For AGM batteries -
+    charge in desulfation mode.
+  question: How to fix battery malfunction on an ATV?
+  tags:
+  - troubleshooting
+- answer: Power reduction due to altitude. Use motors with higher power (e.g., 1200W)
+    and adjust bearings.
+  question: What problems occur when using an electric scooter in mountains?
+  tags:
+  - electric
+  - performance
+  - off_road
+- answer: For dirt and sand - tires with aggressive tread (e.g., Maxxis Bighorn).
+    For asphalt - tires with smooth tread.
+  question: How to choose tires for an ATV?
+  tags:
+  - components
+  - vehicle_selection
+- answer: Install reinforced frames, cargo platforms, cargo trailers. For 2WD models
+    - limit load to 200 kg.
+  question: What modifications increase ATV load capacity?
+  tags:
+  - performance
+  - customization
+- answer: Check roller wear, belt condition, tension. Replace worn components with
+    original ones.
+  question: How to fix variator malfunction on an ATV?
+  tags:
+  - troubleshooting
+- answer: Air filter clogging. Use filters with high filtration degree (e.g., Twin
+    Air).
+  question: What problems occur when using a scooter in sandy areas?
+  tags:
+  - off_road
+  - troubleshooting
+- answer: For city rides - organic pads (e.g., Ferodo FDB). For sports models - metallic
+    (Brembo).
+  question: How to choose brake pads for a motorcycle?
+  tags:
+  - components
+- answer: Moisture-resistant devices (e.g., Garmin Montana). For track days - GPS
+    trackers with terrain maps.
+  question: What navigation systems are suitable for ATVs?
+  tags:
+  - navigation
+- answer: Check speed sensors
+  question: How to fix ABS malfunction on an ATV?
+  tags:
+  - troubleshooting
+tags:
+- code: vehicle_selection
+  description: Questions about choosing appropriate motorcycles, ATVs, or scooters
+- code: maintenance
+  description: Regular maintenance procedures and schedules
+- code: troubleshooting
+  description: Diagnosing and fixing common problems
+- code: performance
+  description: Modifications for improving vehicle performance
+- code: safety
+  description: Safety features, equipment, and practices
+- code: seasonal
+  description: Using vehicles in different weather conditions
+- code: components
+  description: Information about specific parts (tires, brakes, chains, etc.)
+- code: electric
+  description: Questions specific to electric vehicles
+- code: documentation
+  description: Required licenses, insurance, and paperwork
+- code: customization
+  description: Aesthetic and functional modifications
+- code: off_road
+  description: Off-road capabilities and terrain-specific usage
+- code: comfort
+  description: Enhancing rider comfort and convenience
+- code: storage
+  description: Long-term storage and winterization
+- code: technical
+  description: Technical specifications and characteristics
+- code: navigation
+  description: GPS and navigation systems

@@ -1,0 +1,121 @@
+test_cases:
+- test_case: ' Yamaha XMAX 125'
+  steps:
+  - user: Yamaha XMAX 125
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: XMAX 125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: XMAX 125
+  - user: Could you find out the torque?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you find out the torque?
+- test_case: What's the deal with Yamaha XMAX 125
+  steps:
+  - user: What's the deal with Yamaha XMAX 125
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: XMAX 125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: XMAX 125
+  - user: Do you know the hybrid capabilities?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the hybrid capabilities?
+- test_case: Share some info about Yamaha FZ 25
+  steps:
+  - user: Share some info about Yamaha FZ 25
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: FZ 25
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FZ 25
+  - user: What are the safety features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the safety features?
+- test_case: Clue me in about Yamaha FZ 25
+  steps:
+  - user: Clue me in about Yamaha FZ 25
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: FZ 25
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FZ 25
+  - user: What is the braking system like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the braking system like?
+- test_case: ' Yamaha WR250F'
+  steps:
+  - user: Yamaha WR250F
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: WR250F
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: WR250F
+  - user: Can you find the sound system details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the sound system details?
+- test_case: What's the lowdown on Yamaha WR250F
+  steps:
+  - user: What's the lowdown on Yamaha WR250F
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Yamaha
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Yamaha
+  - user: WR250F
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: WR250F
+  - user: Can you find the awards received?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the awards received?

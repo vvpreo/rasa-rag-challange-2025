@@ -1,0 +1,121 @@
+test_cases:
+- test_case: Any news on KTM 300 XC-W Champion
+  steps:
+  - user: Any news on KTM 300 XC-W Champion
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 300 XC-W Champion
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 300 XC-W Champion
+  - user: What type of suspension does it have?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What type of suspension does it have?
+- test_case: ' KTM 300 XC-W Champion'
+  steps:
+  - user: KTM 300 XC-W Champion
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 300 XC-W Champion
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 300 XC-W Champion
+  - user: How fast can it go?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: How fast can it go?
+- test_case: ' KTM 125 XC'
+  steps:
+  - user: KTM 125 XC
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 125 XC
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 125 XC
+  - user: Can you tell me about the lighting system?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me about the lighting system?
+- test_case: ' KTM 125 XC'
+  steps:
+  - user: KTM 125 XC
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: 125 XC
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: 125 XC
+  - user: What is the exterior design like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the exterior design like?
+- test_case: ' KTM SX-E 3'
+  steps:
+  - user: KTM SX-E 3
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: SX-E 3
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: SX-E 3
+  - user: Could you check the user reviews?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you check the user reviews?
+- test_case: Enlighten me on KTM SX-E 3
+  steps:
+  - user: Enlighten me on KTM SX-E 3
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: KTM
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: KTM
+  - user: SX-E 3
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: SX-E 3
+  - user: What is the ground clearance?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the ground clearance?

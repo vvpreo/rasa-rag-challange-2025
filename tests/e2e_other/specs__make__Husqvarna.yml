@@ -1,0 +1,121 @@
+test_cases:
+- test_case: What can you tell me about Husqvarna EE 2
+  steps:
+  - user: What can you tell me about Husqvarna EE 2
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: EE 2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: EE 2
+  - user: What is the reliability rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the reliability rating?
+- test_case: What's up with Husqvarna EE 2
+  steps:
+  - user: What's up with Husqvarna EE 2
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: EE 2
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: EE 2
+  - user: What is the fuel efficiency?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the fuel efficiency?
+- test_case: ' Husqvarna FE 450 Heritage'
+  steps:
+  - user: Husqvarna FE 450 Heritage
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FE 450 Heritage
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FE 450 Heritage
+  - user: Do you have the dimensions?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the dimensions?
+- test_case: ' Husqvarna FE 450 Heritage'
+  steps:
+  - user: Husqvarna FE 450 Heritage
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FE 450 Heritage
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FE 450 Heritage
+  - user: What is the service interval?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the service interval?
+- test_case: ' Husqvarna FC 250 Heritage'
+  steps:
+  - user: Husqvarna FC 250 Heritage
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FC 250 Heritage
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FC 250 Heritage
+  - user: What is the current market price?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the current market price?
+- test_case: ' Husqvarna FC 250 Heritage'
+  steps:
+  - user: Husqvarna FC 250 Heritage
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Husqvarna
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Husqvarna
+  - user: FC 250 Heritage
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FC 250 Heritage
+  - user: Can you tell me the number of cylinders?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the number of cylinders?

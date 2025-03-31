@@ -1,0 +1,121 @@
+test_cases:
+- test_case: Spill the beans about Honda Monkey ABS
+  steps:
+  - user: Spill the beans about Honda Monkey ABS
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: Monkey ABS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Monkey ABS
+  - user: What is the crash test rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the crash test rating?
+- test_case: What can you tell me about Honda Monkey ABS
+  steps:
+  - user: What can you tell me about Honda Monkey ABS
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: Monkey ABS
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Monkey ABS
+  - user: Can you find the awards received?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the awards received?
+- test_case: Share some info about Honda TRX250X
+  steps:
+  - user: Share some info about Honda TRX250X
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: TRX250X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TRX250X
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: ' Honda TRX250X'
+  steps:
+  - user: Honda TRX250X
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: TRX250X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TRX250X
+  - user: What type of suspension does it have?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What type of suspension does it have?
+- test_case: Enlighten me on Honda CRF1100L Africa Twin
+  steps:
+  - user: Enlighten me on Honda CRF1100L Africa Twin
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CRF1100L Africa Twin
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CRF1100L Africa Twin
+  - user: What is the current market price?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the current market price?
+- test_case: What can you tell me about Honda CRF1100L Africa Twin
+  steps:
+  - user: What can you tell me about Honda CRF1100L Africa Twin
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Honda
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Honda
+  - user: CRF1100L Africa Twin
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: CRF1100L Africa Twin
+  - user: Can you find the awards received?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the awards received?

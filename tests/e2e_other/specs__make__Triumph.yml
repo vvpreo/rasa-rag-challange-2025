@@ -1,0 +1,121 @@
+test_cases:
+- test_case: Clue me in about Triumph TF 250-X
+  steps:
+  - user: Clue me in about Triumph TF 250-X
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: TF 250-X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TF 250-X
+  - user: What is the crash test rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the crash test rating?
+- test_case: ' Triumph TF 250-X'
+  steps:
+  - user: Triumph TF 250-X
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: TF 250-X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: TF 250-X
+  - user: What is the braking system like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the braking system like?
+- test_case: ' Triumph Speed 400'
+  steps:
+  - user: Triumph Speed 400
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Speed 400
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Speed 400
+  - user: Do you have information on the engine specifications?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have information on the engine specifications?
+- test_case: Any news on Triumph Speed 400
+  steps:
+  - user: Any news on Triumph Speed 400
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Speed 400
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Speed 400
+  - user: What type of suspension does it have?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What type of suspension does it have?
+- test_case: Share some info about Triumph Scrambler 400 X
+  steps:
+  - user: Share some info about Triumph Scrambler 400 X
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Scrambler 400 X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Scrambler 400 X
+  - user: Do you have the sales figures?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the sales figures?
+- test_case: ' Triumph Scrambler 400 X'
+  steps:
+  - user: Triumph Scrambler 400 X
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Triumph
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Triumph
+  - user: Scrambler 400 X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Scrambler 400 X
+  - user: What type of suspension does it have?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What type of suspension does it have?

@@ -1,0 +1,121 @@
+test_cases:
+- test_case: ' Sym Cruisym 300'
+  steps:
+  - user: Sym Cruisym 300
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Cruisym 300
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Cruisym 300
+  - user: Can you tell me the number of cylinders?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the number of cylinders?
+- test_case: ' Sym Cruisym 300'
+  steps:
+  - user: Sym Cruisym 300
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Cruisym 300
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Cruisym 300
+  - user: Do you have the infotainment features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the infotainment features?
+- test_case: ' Sym Symphony ST 50'
+  steps:
+  - user: Sym Symphony ST 50
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Symphony ST 50
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Symphony ST 50
+  - user: Can you check the transmission type?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you check the transmission type?
+- test_case: ' Sym Symphony ST 50'
+  steps:
+  - user: Sym Symphony ST 50
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: Symphony ST 50
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Symphony ST 50
+  - user: Can you tell me the manufacturing materials?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the manufacturing materials?
+- test_case: Give me the rundown on Sym FNX 125
+  steps:
+  - user: Give me the rundown on Sym FNX 125
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: FNX 125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FNX 125
+  - user: What is the maximum load capacity?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the maximum load capacity?
+- test_case: Give me the rundown on Sym FNX 125
+  steps:
+  - user: Give me the rundown on Sym FNX 125
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Sym
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Sym
+  - user: FNX 125
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: FNX 125
+  - user: What is the emissions rating?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the emissions rating?

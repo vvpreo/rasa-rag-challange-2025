@@ -1,0 +1,256 @@
+version: "3.1"
+###############################################################################
+# ACTIONS
+###############################################################################
+actions:
+  - action_session_start
+  - action_session_end
+  - action_requests_count_increment
+
+  - action_trigger_search_faq_capture_request
+  - action_query_faq
+
+  - action_trigger_search_other
+
+  - action_trigger_search_faq
+  - action_trigger_search_vehicles
+
+  - validate_user_search_specs_make
+  - validate_user_search_specs_model
+  - action_vehicles_search_by_make_and_model_basic
+  - action_vehicles_search_by_make_and_model_internet
+
+
+###############################################################################
+# SLOTS
+###############################################################################
+slots:
+  ###############################################################################
+  # TECH
+  ###############################################################################
+
+  confirmed:
+    type: bool
+    initial_value: null
+
+  action_session_start_already_triggered:
+    type: bool
+    initial_value: false
+
+  search_direction:
+    type: categorical
+    values:
+      - faq
+      - vehicles
+      - other
+    initial_value: null
+
+  search_request_summary:
+    type: text
+    initial_value: null
+
+  ###############################################################################
+  # BUSINESS
+  ###############################################################################
+  user_name:
+    type: text
+    mappings: [ type: from_llm ]
+
+  user_gender:
+    type: categorical
+    values:
+      - male
+      - female
+    mappings: [ type: from_llm ]
+
+  user_age:
+    type: float
+    mappings: [ type: from_llm ]
+
+  user_email:
+    type: text
+    mappings: [ type: from_llm ]
+
+  user_adjustments:
+    type: text
+    mappings: [ type: from_llm ]
+
+  user_adjustments_error:
+    type: bool
+    initial_value: false
+
+  user_confirmed_personal_data:
+    type: bool
+    initial_value: false
+
+  user_search_specs_make:
+    type: text
+    mappings: [ type: from_llm ]
+    initial_value: null
+
+  user_search_specs_model:
+    type: text
+    mappings: [ type: from_llm ]
+    initial_value: null
+
+  user_search_specific_request:
+    type: text
+    mappings: [ type: from_llm ]
+    initial_value: null
+
+  user_search_faq_request:
+    type: text
+    mappings: [ type: from_llm ]
+
+  ###############################################################################
+  # DIALOGUE
+  ###############################################################################
+  requests_count:
+    type: float
+    initial_value: 0
+
+###############################################################################
+# RESPONSES
+###############################################################################
+responses:
+  utter_greet_user:
+    - text: |
+        Greeting you, wayfarer!
+        I am moto expert AI assistant and I can:
+        - Answer general FAQ questions
+        - Answer questions about a particular model. My answers are based on database with 3000+ motorcycles/scooters/ATV 2022-2025.03 procduction
+        
+        At some point, my collague 💂‍AI ADMIN may interrupt us and ask you to share some info.
+
+  utter_clarify_reasons_for_obtaining_personal_data:
+    - text: |
+        💂‍AI ADMIN:
+        Thank you for your interest!
+        I am asking you to share your name, e-mail, age and gender.
+        It's crusial for deeper personification of AI moto expert.
+        By continuing to use the system, you consent to the [terms](https://img.uxcel.com/practices/lorem-ipsum-1629200698112/a-1704914000276-2x.jpg) of the personal data processing agreement.
+        
+        Let's begin with your name.
+
+  utter_confirm_entered_data:
+    - text: |
+        💂‍AI ADMIN:
+        Please confirm information below:
+        **Name**: {user_name}
+        **Gender**: {user_gender}
+        **Age**: {user_age}
+        **E-mail**: {user_email}      
+
+  utter_obtain__user_name:
+    - text: |
+        💂‍AI ADMIN:
+        Enter your name, please
+
+  utter_obtain__user_gender:
+    - text: |
+        💂‍AI ADMIN:
+        Could you please clarify your gender?
+
+  utter_obtain__user_age:
+    - text: |
+        💂‍AI ADMIN:
+        Tell me your age, please.
+
+  utter_obtain__user_email:
+    - text: |
+        💂‍AI ADMIN:
+        And the last step: please, enter your e-mail.
+
+
+  utter_thank_for_entering_data:
+    - text: |
+        💂‍AI ADMIN:
+        Thank you for the information provided. Our conversation will be sent to your e-mail when we finish.
+
+  utter_clarify_what_exactly_wrong:
+    - text: |
+        💂‍AI ADMIN:
+        Unfortunately, sometimes, I am not as smart as my moto expert colleague.
+        I'm kindly asking you to be more precise and enter your adjustments like this:
+        name: <your name>
+        gender: male/female
+        age: <your age>
+        email: <your email>
+  
+  
+
+  utter_moto_assistant_is_back:
+    - text: GOOD! You've passed through this bureaucracy ✊ )) Let's get back to really interesting things!
+
+
+  utter_need_time:
+    - text: 'Working on your inquiry'
+    - text: 'Just a moment, please'
+
+  utter_say_good_bye_personal:
+    - text: |
+        Thank you {user_name} for your interest. Ready to assist you any time! 👍
+        You'll find our current conversation at your mailbox at {user_email} (don't forget to check spam folder too 📬).
+
+  utter_say_good_bye_general:
+    - text: 'Thank you for your interest. Ready to assist you any time! 👍'
+
+
+  utter_collect_user_search_intro:
+    - text: |
+        OK, My Database is limited to vehicles 2022-2025-03 approximately.
+        Anyway, Let's give it a shot!
+        Slight typos are acceptible.
+
+  utter_collect_user_search_specs_make:
+    - text: "Could you please enter the brand name? Yamaha/Harley Davidson/KTM/etc..."
+
+
+  utter_collect_user_search_specs_model:
+    - text: 'Now, please enter the name of model.'
+
+  utter_collect_user_user_search_specific_request:
+    - text: |
+        ✅ I found the vehicle you are asking for.
+        Is there anything specific, you want to know about it?
+
+
+  utter_stub_vehicle:
+    - text: 'VEHICLE SEARCH'
+
+  utter_stub_error:
+    - text: '❌ ❌ ❌ ERROR'
+
+  utter_stub_other:
+    - text: |
+        Here is how I understand your search inquiry:
+        {search_request_summary}
+        
+        Currently, I don't have access to this kind of data to assist you. Try classical web search or other methods please.
+
+  utter_chitchat:
+    - text: How can I assist you today with your motorcycle queries?
+    - text: What motorcycle information are you interested in learning about today?
+    - text: Is there a specific motorcycle model you'd like more details on?
+    - text: How can I help guide you towards the motorcycle information you need?
+    - text: Are you looking for details on a certain motorcycle model?
+    - text: What motorcycle-related topic would you like to explore today?
+    - text: Can I assist you with finding information on a particular motorcycle?
+    - text: What specific motorcycle details are you hoping to learn about?
+    - text: Which motorcycle model can I provide information on for you?
+    - text: How may I assist you in finding the motorcycle information you need?
+    - text: What motorcycle questions can I help answer for you today?
+    - text: Is there a motorcycle model you’re curious about that I can help with?
+    - text: How can I direct our conversation to better assist you with motorcycles?
+    - text: Are you interested in learning more about a specific type of motorcycle?
+    - text: What kind of motorcycle information are you seeking today?
+    - text: Do you have questions about a particular motorcycle model I can help with?
+    - text: How can I support your search for motorcycle information?
+    - text: Is there a motorcycle topic you'd like more information on?
+    - text: Can I provide you with detailed information on a certain motorcycle?
+    - text: What motorcycle details are you interested in discussing today?
+    - text: How can I best assist you with your motorcycle inquiries?
+    - text: What specific motorcycle information would you like to know more about?
+    - text: Are there any motorcycle models you need detailed information on?
+    - text: How may I enhance your understanding of motorcycles today?
+    - text: What motorcycle-related information can I help you with today?

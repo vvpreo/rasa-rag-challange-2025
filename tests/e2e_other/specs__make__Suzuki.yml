@@ -1,0 +1,121 @@
+test_cases:
+- test_case: ' Suzuki SV650X'
+  steps:
+  - user: Suzuki SV650X
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: SV650X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: SV650X
+  - user: What is the ground clearance?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the ground clearance?
+- test_case: What's the story with Suzuki SV650X
+  steps:
+  - user: What's the story with Suzuki SV650X
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: SV650X
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: SV650X
+  - user: What is the history of this model?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the history of this model?
+- test_case: What's the lowdown on Suzuki Boulevard M109R B O S S
+  steps:
+  - user: What's the lowdown on Suzuki Boulevard M109R B O S S
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: Boulevard M109R B O S S
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Boulevard M109R B O S S
+  - user: Could you check the user reviews?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Could you check the user reviews?
+- test_case: Spill the beans about Suzuki Boulevard M109R B O S S
+  steps:
+  - user: Spill the beans about Suzuki Boulevard M109R B O S S
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: Boulevard M109R B O S S
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: Boulevard M109R B O S S
+  - user: What is the mileage?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the mileage?
+- test_case: Any news on Suzuki KingQuad 750AXi
+  steps:
+  - user: Any news on Suzuki KingQuad 750AXi
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: KingQuad 750AXi
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: KingQuad 750AXi
+  - user: What are the safety features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What are the safety features?
+- test_case: ' Suzuki KingQuad 750AXi'
+  steps:
+  - user: Suzuki KingQuad 750AXi
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: Suzuki
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: Suzuki
+  - user: KingQuad 750AXi
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: KingQuad 750AXi
+  - user: Do you know the hybrid capabilities?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the hybrid capabilities?

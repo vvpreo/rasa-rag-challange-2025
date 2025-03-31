@@ -1,0 +1,121 @@
+test_cases:
+- test_case: Got any details on BMW K 1600 Grand America
+  steps:
+  - user: Got any details on BMW K 1600 Grand America
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: K 1600 Grand America
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: K 1600 Grand America
+  - user: Can you provide the weight details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you provide the weight details?
+- test_case: Fill me in on BMW K 1600 Grand America
+  steps:
+  - user: Fill me in on BMW K 1600 Grand America
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: K 1600 Grand America
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: K 1600 Grand America
+  - user: Can you tell me the number of cylinders?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you tell me the number of cylinders?
+- test_case: ' BMW S 1000 RR'
+  steps:
+  - user: BMW S 1000 RR
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: S 1000 RR
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: S 1000 RR
+  - user: Can you find the sound system details?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Can you find the sound system details?
+- test_case: What's the deal with BMW S 1000 RR
+  steps:
+  - user: What's the deal with BMW S 1000 RR
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: S 1000 RR
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: S 1000 RR
+  - user: What is the exterior design like?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: What is the exterior design like?
+- test_case: ' BMW M 1000 R'
+  steps:
+  - user: BMW M 1000 R
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: M 1000 R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: M 1000 R
+  - user: Do you have the infotainment features?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you have the infotainment features?
+- test_case: Fill me in on BMW M 1000 R
+  steps:
+  - user: Fill me in on BMW M 1000 R
+    assertions:
+    - flow_started: vehicles_search_by_make_and_model
+  - user: BMW
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_make
+        value: BMW
+  - user: M 1000 R
+    assertions:
+    - slot_was_set:
+      - name: user_search_specs_model
+        value: M 1000 R
+  - user: Do you know the key competitors?
+    assertions:
+    - slot_was_set:
+      - name: user_search_specific_request
+        value: Do you know the key competitors?
