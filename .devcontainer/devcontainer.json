@@ -3,9 +3,14 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "containerEnv": {
+    "TZ": "UTC"
+  },
   "customizations": {
     "vscode": {
-      "extensions": ["ms-python.python"]
+      "extensions": [
+        "ms-python.python"
+      ]
     }
   },
   "postCreateCommand": "python3.11 -m venv .venv && source .venv/bin/activate && uv pip install -r requirements.txt"
