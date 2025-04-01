@@ -63,7 +63,7 @@ model_groups:
     models:
       - provider: self-hosted
         # DEFAULT
-        # model: openai/chatgpt-4o-latest
+        model: openai/chatgpt-4o-latest
         # UNSTABLE
         # model: mistralai/mixtral-8x22b
         # EXPENSIVE and STRANGE...
@@ -71,13 +71,13 @@ model_groups:
         # BAD
         # model: cohere/command-r-plus
         # DEFINITELY NOT BAD
-        model: openai/o1-mini
+        # model: openai/o1-mini
         api_base: "https://openrouter.ai/api/v1"
         api_key: ${OPENROUTER_API_KEY}
   - id: cmd_generator_finetuned
     models:
       - provider: self-hosted
-        model: vvpreo/rasa_2025
+        model: vvpreo/rasa-2025-v2
         api_base: "https://9leoxw5uuafpsj-8000.proxy.runpod.net/v1"
         api_key: ${RUNPOD_MODEL_KEY}
 

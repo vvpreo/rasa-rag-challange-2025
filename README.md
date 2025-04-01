@@ -26,6 +26,8 @@ I've developed several user flows:
 - 💪Integrated with gmail, to be able to send conversation summary to user.
 - 💪Tuned the prompt I've with custom CompactLLMCommandGenerator implementation to increase LLM's attention to details, by embedding special markers. 
 - 💪Generated hundreds of test cases for the dialogue.
+- Finetuned custom [model](https://huggingface.co/vvpreo/rasa-2025-v2/tree/main), hosted on runpod. twice... 
+  But, unfortunately it works much worse than I expected. Anyway, script for training is here `cmd_gen_finetuning_pure.ipynb`
 
 ## HACKS and customizations applied
 - 🦹🏻‍Implemented custom rasa starting point, so I am able to pass predefined user's phrases for quick testing and debugging. see `scripts/rrasa.py`

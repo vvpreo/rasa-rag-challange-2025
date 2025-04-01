@@ -137,8 +137,6 @@ responses:
         💂‍AI ADMIN:
         Please confirm information below:
         **Name**: {user_name}
-        **Gender**: {user_gender}
-        **Age**: {user_age}
         **E-mail**: {user_email}      
 
   utter_obtain__user_name:

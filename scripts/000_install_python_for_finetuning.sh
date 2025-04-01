@@ -6,6 +6,7 @@ add-apt-repository ppa:deadsnakes/ppa -y
 
 apt-get update
 apt-get install -y python3.11 python3.11-venv
+apt-get install git-lfs
 python3.11 -m ensurepip --upgrade
 
 pip install torch
