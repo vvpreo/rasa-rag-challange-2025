@@ -54,3 +54,7 @@ I've developed several user flows:
   - id: some_step
     set_slots: [ some_slot: slots.some_slot + 1 ]
   ```
+
+# OTHER
+- image for training custom model: `runpod/pytorch:2.8.0-py3.11-cuda12.8.1-cudnn-devel-ubuntu22.04`
+- 
