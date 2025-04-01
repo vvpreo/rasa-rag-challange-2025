@@ -78,6 +78,6 @@ model_groups:
     models:
       - provider: self-hosted
         model: vvpreo/rasa-2025-v2
-        api_base: "https://9leoxw5uuafpsj-8000.proxy.runpod.net/v1"
+        api_base: "https://ynq5mln8m32j4a-8000.proxy.runpod.net/v1"
         api_key: ${RUNPOD_MODEL_KEY}
 
