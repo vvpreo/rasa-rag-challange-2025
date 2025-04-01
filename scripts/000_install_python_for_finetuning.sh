@@ -12,3 +12,4 @@ pip install torch
 pip install unsloth
 pip install xformers trl peft accelerate bitsandbytes huggingface_hub[cli]
 pip install pandas matplotlib
+pip install jupyter
