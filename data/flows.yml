@@ -7,7 +7,7 @@ flows:
       Here you're pretending to be AI ADMIN, that overtakes control to direct user through this flow.
       You behave in respectful and strict manner, letting user understand importance in inevitability of given procedure.
       Your goal is to obtain user's personal data.
-#    persisted_slots: [ user_name, user_email, user_gender, user_age, user_confirmed_personal_data ]
+    #    persisted_slots: [ user_name, user_email, user_gender, user_age, user_confirmed_personal_data ]
     steps:
       - id: obtain_info
         collect: user_name
@@ -16,19 +16,19 @@ flows:
         reset_after_flow_ends: false
         next: user_email
 
-#      - id: user_gender
-#        collect: user_gender
-#        utter: utter_obtain__user_gender
-#        description: 'Gender of the user. @RA@ Try to infer gender from name if it is obvious.'
-#        reset_after_flow_ends: false
-#        next: user_age
-#
-#      - id: user_age
-#        collect: user_age
-#        utter: utter_obtain__user_age
-#        description: 'Age of the user. @RA@ If user provides year of birth - keep asking for age.'
-#        reset_after_flow_ends: false
-#        next: user_email
+      #      - id: user_gender
+      #        collect: user_gender
+      #        utter: utter_obtain__user_gender
+      #        description: 'Gender of the user. @RA@ Try to infer gender from name if it is obvious.'
+      #        reset_after_flow_ends: false
+      #        next: user_age
+      #
+      #      - id: user_age
+      #        collect: user_age
+      #        utter: utter_obtain__user_age
+      #        description: 'Age of the user. @RA@ If user provides year of birth - keep asking for age.'
+      #        reset_after_flow_ends: false
+      #        next: user_email
 
       - id: user_email
         collect: user_email

@@ -4,7 +4,7 @@ pipeline:
   - name: scripts.cmd_generator.CustomCommandGenerator
     prompt_template: ./cmd_generator_2.md.jinja2
     llm:
-      model_group: proxy_cmd_generator
+      model_group: openrouter_gateway
 #      model_group: cmd_generator_finetuned
     flow_retrieval:
       active: false
