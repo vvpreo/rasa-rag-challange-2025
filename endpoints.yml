@@ -59,12 +59,16 @@ model_groups:
       - provider: rasa
         model: rasa/cmd_gen_codellama_13b_calm_demo
         api_base: "https://tutorial-llm.rasa.ai"
-  - id: proxy_cmd_generator
+  - id: openrouter_gateway
     models:
       - provider: self-hosted
         model: openai/chatgpt-4o-latest
         api_base: "https://openrouter.ai/api/v1"
         api_key: ${OPENROUTER_API_KEY}
-#      - provider: self-hosted
-#        model: openai/chatgpt-4o-latest
-#        api_base: "http://localhost:5800"
+  - id: cmd_generator_finetuned
+    models:
+      - provider: self-hosted
+        model: vvpreo/rasa_2025
+        api_base: "https://9leoxw5uuafpsj-8000.proxy.runpod.net/v1"
+        api_key: ${RUNPOD_MODEL_KEY}
+

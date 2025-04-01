@@ -19,5 +19,5 @@
       ]
     }
   },
-  "postCreateCommand": "uv venv .venv && source .venv/bin/activate && uv pip install -r requirements.txt && rasa train && rasa shell"
+  "postCreateCommand": "uv venv .venv && source .venv/bin/activate"
 }

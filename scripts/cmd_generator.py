@@ -103,9 +103,9 @@ class CustomCommandGenerator(CompactLLMCommandGenerator):
         }
 
         tmplt = self.compile_template(self.prompt_template).render(**inputs)
-        # print('***' * 30)
-        # print('\n\t' + '\n\t'.join(tmplt.splitlines()))
-        # print('***' * 30)
+        print('***' * 30)
+        print('\n\t' + '\n\t'.join(tmplt.splitlines()))
+        print('***' * 30)
 
         return self.compile_template(self.prompt_template).render(**inputs)
 

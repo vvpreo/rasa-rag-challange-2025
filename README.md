@@ -2,6 +2,13 @@
 My name is Vladimir and I prepared a chatbot called `AI MOTO EXPERT`.
 My goal was to prepare a demo of informational AI assistant, that combines several techniques for smooth user experience.
 
+# How to run in codespaces
+- Codespaces should load with .venv activated. if not - run `source .venv/bin.activate`
+- Next step is to run `uv pip install -r requirements.txt`
+- `set -a; source .env; set +a` to source necessary environment variables.
+- `rasa train`
+- That's it. `rasa shell`, `rasa inspect`, `rasa inspect --voice` should be working as well.
+
 ## Basic information
 I've developed several user flows:
 - `faq`. Approached with a combination of vector search and LLM prompting, called RAG techinque.
