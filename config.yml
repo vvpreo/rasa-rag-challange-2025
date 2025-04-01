@@ -1,8 +1,6 @@
 recipe: default.v1
 language: en
 pipeline:
-  #  - name: NLUCommandAdapter
-#  - name: CompactLLMCommandGenerator
   - name: scripts.cmd_generator.CustomCommandGenerator
     prompt_template: ./cmd_generator_2.md.jinja2
     llm:
@@ -13,11 +11,6 @@ pipeline:
 
 policies:
   - name: FlowPolicy
-  #  - name: IntentlessPolicy
-  #  - name: RulePolicy
-  #    core_fallback_threshold: 0.3
-  #    enable_fallback_prediction: true
-  #    core_fallback_action_name: action_default_fallback
 
   # Decided not to use it, because it does not give enough flexibility.
   #  - name: EnterpriseSearchPolicy
