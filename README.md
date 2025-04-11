@@ -60,4 +60,8 @@ I've developed several user flows:
 
 # OTHER
 - image for training custom model: `runpod/pytorch:2.8.0-py3.11-cuda12.8.1-cudnn-devel-ubuntu22.04`
-- 
+- DEMO materials: https://miro.com/app/board/uXjVIDm3-AU=/?share_link_id=779360472537
+- Use this to run serve finetuned model via VLLM
+  - IMAGE: `vllm/vllm-openai:latest` 
+  - ARGS: `--host 0.0.0.0 --port 8000 --model vvpreo/rasa-2025-v2 --enforce-eager --gpu-memory-utilization 0.95 --api-key <SET-API-KEY> --max-model-len 32000`
+  - DON't forget to add your HF_TOKEN env var
